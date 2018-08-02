@@ -10,7 +10,7 @@ def main():
     for letter in S:
         if letter in 'a' 'e' 'i' 'o' 'u' 'A' 'E' 'I' 'O' 'U':
             C = C+1
-    print("Number of vowels:"+ str(C))
+    print(C)
 
 if __name__== "__main__":
 	main()
