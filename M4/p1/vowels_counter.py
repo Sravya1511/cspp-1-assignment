@@ -13,5 +13,5 @@ def main():
         if letter in 'a' 'e' 'i' 'o' 'u' 'A' 'E' 'I' 'O' 'U':
             count_1 = count_1+1
     print(count_1)
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
