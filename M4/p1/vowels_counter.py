@@ -4,7 +4,7 @@
 
 #Number of vowels: 5
 
-def main()
+def main():
     string_1 = input()
     count_1 = 0
     for letter in string_1:
