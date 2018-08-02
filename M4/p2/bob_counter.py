@@ -6,8 +6,8 @@ Number of times bob occurs is: 2'''
 
 def main():
 """count"""
-	S_A = input("Enter a string ")
-    S_B = input("Enter a sub string ")
-    print(S_A.count(S_B))
+	s_a = input("Enter a string ")
+    s_b = input("Enter a sub string ")
+    print(s_a.count(s_b))
 if __name__ == "__main__":
 	main()
