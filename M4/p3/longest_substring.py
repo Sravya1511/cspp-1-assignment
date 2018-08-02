@@ -15,23 +15,24 @@ If you've spent more than a few hours on this problem, we suggest that you move 
 If you have time, come back to this problem after you've had a break and cleared your head.'''
 
 def main():
+    '''longest'''
     str_ = input()
-    a_ = len(str_)
-    max_ = ""
-    temp_ = 0
-    co_ = 0
-    I = 0
-    str1 = ""
-    for x in range(0, a_-1):
-        if str_[x] < str_[x+1]:
-            co_ = co_+1
-            str1 = str1 + str_[x]
-        else:
-            if co_ > temp_:
-                temp_ = co_
-                co_ = 0
-                max_ = str1
-                max_ = str1 + str_[x]
-    print(max_)
+    tstr_ = ""
+    for i, item in enumerate(str_):
+        flag_ = 0
+        tstr2_ = ""
+        tt_ = item
+        ji_ = i
+        while flag_ != 1 and ji_ != len(str_):
+            if ord(tt_) <= ord(str_[ji_]):
+                tt_ = str_[ji_]
+                tstr2_ += str_[ji_]
+            else:
+                flag_ = 1
+            ji_ += 1
+
+        if len(tstr2_) > len(tstr_):
+            tstr_ = tstr2_
+    print(tstr_)
 if __name__ == "__main__":
     main()
