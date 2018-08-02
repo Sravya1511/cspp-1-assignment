@@ -1,13 +1,13 @@
-'''Assume s is a string of lower case characters.
-
-Write a program that prints the number of times the string 'bob' occurs in s. 
-
-Number of times bob occurs is: 2'''
-
+"""bob counter"""
 def main():
-"""count"""
-	s_a = input("Enter a string ")
-    s_b = input("Enter a sub string ")
-    print(s_a.count(s_b))
+    """bob"""
+    s_a = input("Enter a string ")
+    s_b = 'bob'
+    a_1 = len(s_a)
+    co_ = 0
+    for i in range(a_1-2):
+        if s_b == s_a[i]+s_a[i+1]+s_a[i+2]:
+            co_ = co_+1
+    print(co_)
 if __name__ == "__main__":
-	main()
+    main()
