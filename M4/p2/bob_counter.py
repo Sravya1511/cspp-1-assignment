@@ -1,7 +1,7 @@
 """bob counter"""
 def main():
     """bob"""
-    s_a = input("Enter a string ")
+    s_a = input()
     s_b = 'bob'
     a_1 = len(s_a)
     co_ = 0
