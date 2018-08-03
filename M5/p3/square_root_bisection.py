@@ -1,6 +1,6 @@
 """Write a python program to find the square root of the given number"""
 def main():
-	"""bisection"""
+    """bisection"""
     x_1 = int(input())
     epsilon_1 = 0.01
     low_1 = 0.0
