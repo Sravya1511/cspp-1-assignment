@@ -1,15 +1,18 @@
 """ Write a python program to find the square root of the given number """
 def main():
-    """root"""
-    s_1 = int(input())
-    epsilon_1 = 0.01
-    guess_1 = 0
-    incre_1 = 0.001
-    while(abs(guess_1**2 - s_1) >= epsilon_1 and guess_1 <= s_1):
-        guess_1 += incre_1
-    if abs(guess_1**2 - s_1 >= epsilon_1):
-        print("No square")
+    """square"""
+    x_1 = int(input())
+    epsilon_ = 0.01
+    cla_ = 0
+    guess_ = 0.0
+    increment_ = 0.0001
+    num_guesses = 0
+    while abs(guess_**2 - x_1) >= epsilon_:
+        guess_ += increment_
+        num_guesses += 1
+    if abs(guess_**2 - x_1) >= epsilon_:
+        cla_ = cla_ + 1
     else:
-        print("sqaure" + str(guess_1))
+        print(str(guess_))
 if __name__ == "__main__":
     main()
