@@ -1,7 +1,7 @@
 """Write a python program to find the square root of the given number"""
 def main():
-	"""nr"""
-    step_ = 0.01
+    """nr"""
+	step_ = 0.01
     y_ = int(input())
     guess_ = y_/2.0
     nog_ = 0
