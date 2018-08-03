@@ -11,5 +11,5 @@ def main():
         print("No square")
     else:
         print("sqaure" + str(guess_1))
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
