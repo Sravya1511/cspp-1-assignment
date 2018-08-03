@@ -9,5 +9,5 @@ def main():
         nog_ += 1
         guess_ = guess_ - (((guess_**2) - y_)/(2*guess_))
     print(str(guess_))
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
