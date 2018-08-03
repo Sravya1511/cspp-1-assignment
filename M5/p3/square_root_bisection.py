@@ -12,15 +12,15 @@
 def main():
     x_1 = int(input())
     approx_1 = 0.01
-    low_1 = 0
+    low_1 = 1
     high_1 = x_1
-    guess_1 = (low_1 + high_11)//2
+    guess_1 = (low_1 + high_1)/2
     while guess_1**2 - x_1 >= approx_1:
         if guess_1**2 < x_1:
             low_1 = guess_1
         if guess_1**2 > x_1:
             high_1 = guess_1
-    guess_1 = (low_1 + high_1)//2
-    print(str(guess_1))    
+        guess_1 = (low_1 + high_1)/2
+    print("square root is " + str(guess_1))    
 if __name__== "__main__":
 	main()
