@@ -1,6 +1,6 @@
-""" Write a python program to find the square root of the given number"""
+"""Write a python program to find the square root of the given number"""
 def main():
-    """bisection"""
+	"""bisection"""
     x_1 = int(input())
     epsilon_1 = 0.01
     low_1 = 0.0
@@ -13,7 +13,5 @@ def main():
             high_1 = ans_1
     ans_1 = (high_1 + low_1)/2.0
     print(str(ans_1)
-
-
-if __name__  == "__main__":
+if __name__ == "__main__":
 	main()
