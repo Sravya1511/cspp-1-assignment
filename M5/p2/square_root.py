@@ -14,5 +14,5 @@ def main():
         cla_ = cla_+1
     else:
         print(str(guess_))
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
