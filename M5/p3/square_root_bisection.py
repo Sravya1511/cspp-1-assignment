@@ -1,17 +1,19 @@
-
+"""bisect"""
 def main():
     """bisection"""
-    x_1 = int(input())
-    epsilon_1 = 0.01
-    low_1 = 0.0
-    high_1 = x_1
-    ans_1 = (high_1 + low_1)/2.0
-    while abs(ans_1**2 - x_1) >= epsilon_1:
-        if ans_1**2 < x_1:
-            low_1 = ans_1
+    x_ = int(input())
+    epsilon_ = 0.01
+    numGuesses_ = 0
+    low_ = 0.0
+    high_ = x_
+    ans_ = (high_ + low_)/2.0
+    while abs(ans_**2 - x_) >= epsilon_:
+        numGuesses_ += 1
+        if ans_**2 < x_:
+            low_ = ans_
         else:
-            high_1 = ans_1
-    ans_1 = (high_1 + low_1)/2.0
-    print(str(ans_1))
+            high_ = ans_
+        ans_ = (high_ + low_)/2.0
+    print(str(ans_))
 if __name__ == "__main__":
-	main()
+    main()
