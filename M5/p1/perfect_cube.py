@@ -7,11 +7,10 @@ def main():
         if guess_1**3 >= s_1:
             break
     if guess_1**3 != s_1:
-        print(str(r_1) + "is not a perfect cube")
+        print(str(r_1) + " is not a perfect cube")
     elif guess_1**3 == s_1:
         if r_1 < 0:
             guess_1 = -guess_1
-        print(str(r_1) + "is a perfect cube")
-if __name__ == "__main__":
+        print(str(r_1) + " is a perfect cube")  
+            if __name__ == "__main__":
     main()
-    
