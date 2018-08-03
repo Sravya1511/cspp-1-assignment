@@ -2,12 +2,12 @@
 def main():
     """nr"""
     step_ = 0.01
-    y_ = int(input())
-    guess_ = y_/2.0
+    y_q = int(input())
+    guess_ = y_q/2.0
     nog_ = 0
-    while abs(guess_*guess_ - y_) >= step_:
+    while abs(guess_*guess_ - y_q) >= step_:
         nog_ += 1
-        guess_ = guess_ - (((guess_**2) - y_)/(2*guess_))
+        guess_ = guess_ - (((guess_**2) - y_q)/(2*guess_))
     print(str(guess_))
 if __name__ == "__main__":
     main()
