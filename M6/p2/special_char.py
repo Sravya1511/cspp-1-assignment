@@ -9,6 +9,6 @@ def main():
         if letter in '!' '@' '#' '$' '%' '^' '&' '*':
             print(" ")
         else:
-            print(str(letter)
+            print(str(letter))
 if __name__ == "__main__":
     main()
