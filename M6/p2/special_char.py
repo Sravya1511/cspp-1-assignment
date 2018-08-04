@@ -7,7 +7,7 @@ def main():
     str_input = input()
     for letter in str_input:
         if letter in '!' '@' '#' '$' '%' '^' '&' '*':
-            print(" ")
+            print("")
         else:
             print(letter)
 if __name__ == "__main__":
