@@ -10,12 +10,15 @@ def main():
     N = abs(int_input)
     P = 1
     R = 0
-    while N >= 1:
-        R = N%10
-        P = P*R
-        N = N//10
-    if int_input < 0:
-        P = -P
-    print(P)
+    if N == 0:
+    	print(N)
+    else:
+        while N >= 1:
+            R = N%10
+            P = P*R
+            N = N//10
+        if int_input < 0:
+            P = -P
+        print(P)
 if __name__ == "__main__":
     main()
