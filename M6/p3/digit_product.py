@@ -7,18 +7,18 @@ example:
 def main():
     """product"""
     int_input = int(input())
-    N = abs(int_input)
-    P = 1
-    R = 0
-    if N == 0:
-    	print(N)
+    n_1 = abs(int_input)
+    p_1 = 1
+    r_1 = 0
+    if n_1 == 0:
+    	print(n_1)
     else:
-        while N >= 1:
-            R = N%10
-            P = P*R
-            N = N//10
+        while n_1 >= 1:
+            r_1 = n_1%10
+            p_1 = p_1*r_1
+            n_1 = n_1//10
         if int_input < 0:
-            P = -P
-        print(P)
+            p_1 = -p_1
+        print(p_1)
 if __name__ == "__main__":
     main()
