@@ -1,9 +1,4 @@
-'''
-Given a  number int_input, find the product of all the digits
-example: 
-	input: 123
-	output: 6
-'''
+"""product"""
 def main():
     """product"""
     int_input = int(input())
