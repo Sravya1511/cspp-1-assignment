@@ -6,9 +6,9 @@ Output has three spaces, which are to be replaced with these special characters
 def main():
     str_input = input()
     for letter in str_input:
-    	if letter in '!' '@' '#' '$' '%' '^' '&' '*':
-    		print(" ")
-    	else:
-    		peint(letter)
+        if letter in '!' '@' '#' '$' '%' '^' '&' '*':
+            print(" ")
+        else:
+            print(letter)
 if __name__ == "__main__":
     main()
