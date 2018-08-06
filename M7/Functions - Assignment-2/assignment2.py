@@ -1,6 +1,6 @@
 # Assignment-2 - Paying Debt off in a Year
 def payingDebtOffInAYear(balance_1, annual_interest_rate):
-	mfmp_ = 10
+	mfmp_ = 0
 	temp_bal = balance_1
 	year_count = 1
 	while balance_1 > 0:
@@ -21,7 +21,7 @@ def main():
 	data = input()
 	data = data.split(' ')
 	data = list(map(float, data))
-	print(payingDebtOffInAYear(data[0],data[1]))
+	print("Lowest Payment:",payingDebtOffInAYear(data[0],data[1]))
 	
 if __name__ == "__main__":
 	main()
