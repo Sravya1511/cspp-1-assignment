@@ -1,4 +1,4 @@
-# Assignment-2 - Paying Debt off in a Year
+"""code"""
 def paying_debt(balance_1, annual_interest_rate):
     """code"""
     mfmp_ = 0
@@ -13,6 +13,7 @@ def paying_debt(balance_1, annual_interest_rate):
             m_intrest_rate = annual_interest_rate/12.0
             monthly_unpaid_balance = balance_1 - mfmp_
             balance_1 = monthly_unpaid_balance + m_intrest_rate*monthly_unpaid_balance
+            i = i+1
             # balance_1 = updated_balance_each_month
             # print (i,balance_1)
         # if balance_1 <=0.5:
