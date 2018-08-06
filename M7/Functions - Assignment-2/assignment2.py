@@ -1,9 +1,10 @@
 # Assignment-2 - Paying Debt off in a Year
 def payingDebtOffInAYear(balance_1, annual_interest_rate):
-	mfmp_ = 10
+	mfmp_ = 0
 	temp_bal = balance_1
 	year_count = 1
 	while balance_1 > 0:
+		mfmp_ += 10
 		balance_1 = temp_bal
 		# print(mfmp_,year_count)
 		for i in range(1, 13):
@@ -14,7 +15,7 @@ def payingDebtOffInAYear(balance_1, annual_interest_rate):
 			# print (i,balance_1)
 		# if balance_1 <=0.5:
 		#     break
-		mfmp_ += 10
+		
 		year_count += 1
 	return mfmp_
 def main():
