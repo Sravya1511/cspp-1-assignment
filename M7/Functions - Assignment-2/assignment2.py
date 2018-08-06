@@ -14,7 +14,7 @@ def payingDebtOffInAYear(balance_1, annual_interest_rate):
 			# print (i,balance_1)
 		# if balance_1 <=0.5:
 		#     break
-		mfmp_ += 10
+			mfmp_ += 10
 		year_count += 1
 	return mfmp_
 def main():
