@@ -1,3 +1,4 @@
+"""program"""
 def paying_debt_off_in_a_year(balance, annual_interest_rate):
     """# In short:
     # Monthly interest rate = (Annual interest rate) / 12.0
