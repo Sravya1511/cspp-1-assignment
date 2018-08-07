@@ -5,9 +5,6 @@ def sum_of_digits(n_1):
         r_1 = n_1%10
         return r_1+sum_of_digits(n_1//10)
     return 0
-
-  
-        
 def main():
     """sum"""
     a_1 = input()
