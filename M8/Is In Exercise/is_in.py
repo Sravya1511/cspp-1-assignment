@@ -4,28 +4,12 @@
 # This function takes in two arguments character and String and returns one boolean value.
 
 def isIn(char, aStr):
-    low = 0
-    high = len(aStr)
-    mid = (low+high)//2
-    if low == high:
-        if char == aStr:
-            return True
-    if high == 0:
-        return False
-    while (low!=high):
-        if aStr[mid] == char:
-            return True
-        else:
-            if aStr[mid] > char:
-                return value(low, mid)
-            elif aStr[mid] > char:
-                return value(mid, high)
-    return 0
-def value(low, high): 
-    mid = (low+high)//2
-    if aStr[mid] == char:
+    if char == aStr[0]:
         return True
-    return 0
+    elif len(aStr) == 1:
+        return False
+    else:
+        return isIn(char, aStr[1:])
 
 
 def main():
