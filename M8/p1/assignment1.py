@@ -1,7 +1,7 @@
 """factorial"""
 def factorial_1(n_1):
     """fact"""
-    if n_1 == 1 or n_1 == 0:
+    if n_1 in (0, 1):
         return 1
     return n_1*factorial_1(n_1-1)
 def main():
