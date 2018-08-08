@@ -15,7 +15,7 @@ def is_word_guessed(secret_word, letters_guessed):
         if i not in letters_guessed:
             a_n = a_n + "_"
         else: 
-            a_n + a_n + "_"
+            a_n = a_n + "_"
     return a_n
 def main():
     """guess"""
