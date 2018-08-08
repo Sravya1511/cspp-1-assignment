@@ -8,10 +8,7 @@ def is_word_guessed(secret_word, letters_guessed):
         for j in letters_guessed:
             if j == i:
                 count = count+1
-    if count == length_1:
-        return True
-    else:
-        return False
+    return(bool(count == length_1))
 def main():
     """guess"""
     user_input = input()
