@@ -1,11 +1,6 @@
-'''
-Exercise: Assignment-2
-Next, implement the function getGuessedWord that takes in two parameters
-a string, secret_word, and a list of letters, letters_guessed. This function
-returns a string that is comprised of letters and underscores, based on what
-letters in letters_guessed are in secret_word. This shouldn't be too different from isWordGuesse
-'''
+"""string"""
 def get_guessed_word(secret_word, letters_guessed):
+    """string"""
     list_1 = list(secret_word)
     length_1 = len(secret_word)
     astr = ""
@@ -19,11 +14,8 @@ def get_guessed_word(secret_word, letters_guessed):
         else:
             astr = astr + '_'
     return astr
-    
 def main():
-    '''
-    Main function for current assignment
-    '''
+    """string"""
     user_input = input()
     if user_input:
         data = user_input.split(" ")
