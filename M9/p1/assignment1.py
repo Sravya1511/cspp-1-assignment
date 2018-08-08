@@ -1,4 +1,3 @@
-"""guess"""
 '''def is_word_guessed(secret_word, letters_guessed):
     """guess"""
     list_1 = list(secret_word)
