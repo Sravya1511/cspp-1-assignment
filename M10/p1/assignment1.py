@@ -20,7 +20,7 @@ def get_available_letters(letters_guessed):
     value_ = key_
     dictionary_ = dict(zip(key_, value_))
     for i in letters_guessed:
-         if i in dictionary_.values():
+        if i in dictionary_.values():
             del dictionary_[i]
     for v_1 in dictionary_.values():
         x_1 = x_1 + v_1
