@@ -13,19 +13,18 @@ that are not in letters_guessed
 #             li.remove(i)
 #     return "".join(li)
 def get_available_letters(letters_guessed):
+    """dictionary"""
     import string
-    x = ""
-    key = list(string.ascii_lowercase)
-    value = key
-    dictionary = dict(zip(key, value))
+    x_1 = ""
+    key_ = list(string.ascii_lowercase)
+    value_ = key_
+    dictionary_ = dict(zip(key_, value_))
     for i in letters_guessed:
-         if i in dictionary.values():
-            del dictionary[i]
-    for v in dictionary.values():
-        x = x+v
-    return x
-
-           
+         if i in dictionary_.values():
+            del dictionary_[i]
+    for v_1 in dictionary_.values():
+        x_1 = x_1 + v_1
+    return x_1
 def main():
     '''
     Main function for the given program
