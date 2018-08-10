@@ -20,8 +20,7 @@ def get_word_score(word_1, n_1):
         if n_1 == length_1:
             sum_1 += 50
         return sum_1
-    else:
-        print("worng inputs")
+    print("worng inputs")
 def main():
     '''
     Main function for the given problem
