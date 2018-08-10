@@ -1,5 +1,6 @@
 """game"""
 def get_word_score(word_1, n_1):
+    """string"""
     # import string
     # key = list(string.ascii_lowercase)
     # value = []
