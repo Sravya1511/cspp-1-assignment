@@ -26,7 +26,7 @@ def main():
         i = i+1
         i = i-1
         l_1 = data.split()
-        adict_1[l[0]] = int(l_1[1])
+        adict_1[l_1[0]] = int(l_1[1])
     l2 = input().split()
     print(is_valid_word(word_1, adict_1, l2))
 if __name__ == "__main__":
