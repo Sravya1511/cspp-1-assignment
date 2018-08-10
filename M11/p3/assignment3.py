@@ -4,8 +4,8 @@ def is_valid_word(word_1, hand_1, word_list):
     if word_1 not in word_list:
         return False
     for i_1 in word_1:
-            if i_1 not in hand_1.keys():
-                return False
+        if i_1 not in hand_1.keys():
+            return False
     return True
 def main():
     """string"""
