@@ -4,7 +4,7 @@
 
 def calculateHandlen(hand):
     sum = 0
-    for i in hand
+    for i in hand:
         sum = sum+hand[i]
     return sum
 def main():
