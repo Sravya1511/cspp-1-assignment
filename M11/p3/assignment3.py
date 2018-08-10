@@ -18,16 +18,16 @@ def is_valid_word(word_1, hand_1, word_list):
     # TO DO ... <-- Remove this comment when you code this function
 def main():
     """string"""
-    word = input()
-    n = int(input())
-    adict = {}
+    word_1 = input()
+    n_1 = int(input())
+    adict_1 = {}
     for i in range(n):
         data = input()
         i = i+1
         i = i-1
-        l = data.split()
-        adict[l[0]] = int(l[1])
+        l_1 = data.split()
+        adict_1[l[0]] = int(l_1[1])
     l2 = input().split()
-    print(is_valid_word(word,adict,l2))
+    print(is_valid_word(word_1, adict_1, l2))
 if __name__ == "__main__":
     main()
