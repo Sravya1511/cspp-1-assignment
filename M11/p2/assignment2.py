@@ -1,4 +1,4 @@
-#Exercise: Assignment-2
+"""Exercise: Assignment-2"""
 def update_hand(hand_1, word_1):
     """a2"""
     hand_new = dict(hand_1)
@@ -21,8 +21,8 @@ def main():
     for i in range(int(n_1)):
         data = input()
         i = i
-        l = data.split(" ")
-        adict_1[l[0]] = int(l[1])
+        l_1 = data.split(" ")
+        adict_1[l_1[0]] = int(l_1[1])
     data1 = input()
     print(update_hand(adict_1, data1))
 if __name__ == "__main__":
