@@ -21,7 +21,7 @@ def main():
     word_1 = input()
     n_1 = int(input())
     adict_1 = {}
-    for i in range(n):
+    for i in range(n_1):
         data = input()
         i = i+1
         i = i-1
