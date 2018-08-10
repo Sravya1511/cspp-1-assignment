@@ -18,13 +18,13 @@ def update_hand(hand_1, word_1):
     return(hand_new)
 def main():
     """string"""
-	n_1 = input()
-	adict_1 = {}
-	for i in range(int(n_1)):
-		data = input()
-		l = data.split(" ")
-		adict_1[l[0]] = int(l[1])
-	data1 = input()
-	print(update_hand(adict_1, data1))
+    n_1 = input()
+    adict_1 = {}
+    for i in range(int(n_1)):
+        data = input()
+        l = data.split(" ")
+        adict_1[l[0]] = int(l[1])
+    data1 = input()
+    print(update_hand(adict_1, data1))
 if __name__ == "__main__":
-	main()
+    main()
