@@ -13,8 +13,7 @@ def updateHand(hand, word):
             value.append(val)
         else:
             key.append(i)
-            val = hand[i]
-            value.append(val)
+            value.append(hand[i])
     handnew = dict(zip(key, value))
     return(handnew)
             
