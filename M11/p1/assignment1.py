@@ -7,7 +7,7 @@ def get_word_score(word, n):
     # key = list(string.ascii_lowercase)
     # value = []
     # x=1
-    # sum = 0
+    sum = 0
     # for i in range(0, 26):
     #     value.append(x)
     #     x+=1
