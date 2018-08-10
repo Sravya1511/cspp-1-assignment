@@ -6,7 +6,7 @@ def updateHand(hand, word):
     handnew = {}
     key = []
     value = []
-    for i in hand:
+    for i in hand.keys():
         if i in word:
             key.append(i)
             val = hand[i] - 1
