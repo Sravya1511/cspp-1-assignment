@@ -18,8 +18,8 @@ def get_word_score(word, n):
         for i in word:
             if i in dictionary_.keys():
                 sum = sum+dictionary_[i]
-        sum = sum*length
-        if n == length:
+        sum = sum*length_1
+        if n == length_1:
             sum += 50
         return sum
     else:
