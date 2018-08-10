@@ -10,7 +10,7 @@ def main():
     n_1 = int(input())
     adict = {}
     #for i_1 in range(int(n_1)):
-    while i_1 < n_1
+    while i_1 < n_1:
         data = input()
         l_1 = data.split()
         adict[l_1[0]] = int(l_1[1])
