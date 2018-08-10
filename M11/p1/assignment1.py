@@ -19,9 +19,8 @@ def get_word_score(word_1, n_1):
                 sum_1 = sum_1 + dictionary_[i]
         sum_1 = sum_1*length_1
         if n_1 == length_1:
-            sum_1 += 50
+            return sum_1 += 50
         return sum_1
-    print("worng inputs")
 def main():
     '''
     Main function for the given problem
