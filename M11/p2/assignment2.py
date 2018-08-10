@@ -2,9 +2,7 @@
 def update_hand(hand_1, word_1):
     """a2"""
     hand_new = dict(hand_1)
-    key_1 = []
-    value_1 = []
-    for i in word_1:
+       for i in word_1:
         if i in hand_1.keys():
             # key.append(i)
             # val = hand[i] - 1
@@ -15,13 +13,14 @@ def update_hand(hand_1, word_1):
     #         key.append(i)
     #         value.append(hand[i])
     # hand = dict(zip(key, value))
-    return(hand_new)
+    return hand_new
 def main():
     """string"""
     n_1 = input()
     adict_1 = {}
     for i in range(int(n_1)):
         data = input()
+        i = i
         l = data.split(" ")
         adict_1[l[0]] = int(l[1])
     data1 = input()
