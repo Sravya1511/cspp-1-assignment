@@ -3,16 +3,19 @@ Exercise: Assignment-1
 The first step is to implement some code that allows us to calculate the score for a single word. The function get_word_score should accept as input a string of lowercase letters (a word) and return the integer score for that word, using the game's scoring rules.
 '''
 def get_word_score(word, n):
-    import string
-    key = list(string.ascii_lowercase)
-    value = []
-    x=1
-    sum = 0
-    for i in range(0, 26):
-        value.append(x)
-        x+=1
-    dictionary_ = dict(zip(key, value))
+    # import string
+    # key = list(string.ascii_lowercase)
+    # value = []
+    # x=1
+    # sum = 0
+    # for i in range(0, 26):
+    #     value.append(x)
+    #     x+=1
+    # dictionary_ = dict(zip(key, value))
     # print(dictionary_)
+    dictionary_ = {'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1,
+    'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1,
+    's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10}
     length = len(word)
     if length <= n:
         for i in word:
