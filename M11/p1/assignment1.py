@@ -8,7 +8,7 @@ def get_word_score(word, n):
     value = []
     x=1
     sum = 0
-    for i in range(0, 25):
+    for i in range(0, 26):
         value.append(x)
         x+=1
     dictionary_ = dict(zip(key, value))
