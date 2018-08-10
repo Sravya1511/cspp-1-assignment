@@ -9,6 +9,7 @@ def main():
     """sum"""
     n_1 = int(input())
     adict = {}
+    i_1 = 0
     #for i_1 in range(int(n_1)):
     while i_1 < n_1:
         data = input()
