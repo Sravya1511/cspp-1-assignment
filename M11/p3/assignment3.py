@@ -1,18 +1,16 @@
 """comment"""
-def is_valid_word(word, hand, wordList):
-    if word not in wordList:
+def is_valid_word(word_1, hand_1, word_list):
+    if word_1 not in word_list:
         return False
     else:
-        for i in word:
-            if i not in hand.keys():
+        for i_1 in word_1:
+            if i_1 not in hand_1.keys():
                 return False
     return True
     """
     Returns True if word is in the wordList and is entirely
     composed of letters in the hand. Otherwise, returns False.
-
     Does not mutate hand or wordList.
-   
     word: string
     hand: dictionary (string -> int)
     wordList: list of lowercase strings
