@@ -8,13 +8,13 @@ Fill in the code for isValidWord in ps4a.py and be sure you've passed the approp
 '''
 
 def isValidWord(word, hand, wordList):
-	if word not in wordList:
-		return False
-	else:
-		for i in word:
-			if i not in hand.keys():
-			    return False
-	return True
+    if word not in wordList:
+        return False
+    else:
+        for i in word:
+            if i not in hand.keys():
+                return False
+    return True
     """
     Returns True if word is in the wordList and is entirely
     composed of letters in the hand. Otherwise, returns False.
