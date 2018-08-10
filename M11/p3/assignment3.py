@@ -1,5 +1,6 @@
 """comment"""
 def is_valid_word(word_1, hand_1, word_list):
+    """string"""
     if word_1 not in word_list:
         return False
     else:
