@@ -3,7 +3,7 @@
 
 
 def updateHand(hand, word):
-    handnew = {}
+    # handnew = {}
     key = []
     value = []
     for i in hand.keys():
@@ -14,8 +14,8 @@ def updateHand(hand, word):
         else:
             key.append(i)
             value.append(hand[i])
-    handnew = dict(zip(key, value))
-    return(handnew)
+    hand = dict(zip(key, value))
+    return(hand)
             
 
 
