@@ -3,19 +3,21 @@
 
 
 def updateHand(hand, word):
-    # handnew = {}
+    handnew = dict(hand)
     key = []
     value = []
-    for i in word:
-        if i in hand.keys():
-            key.append(i)
-            val = hand[i] - 1
-            value.append(val)
+    for i in hand.keys():
+        if i in word():
+            # key.append(i)
+            # val = hand[i] - 1
+            # value.append(val)
+            handnew[i] = handnew[i] - 1
         else:
-            key.append(i)
-            value.append(hand[i])
-    hand = dict(zip(key, value))
-    return(hand)
+            handnew[i] = handnew[i]
+    #         key.append(i)
+    #         value.append(hand[i])
+    # hand = dict(zip(key, value))
+    return(handnew)
             
 
 
