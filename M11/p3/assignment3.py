@@ -7,15 +7,6 @@ def is_valid_word(word_1, hand_1, word_list):
             if i_1 not in hand_1.keys():
                 return False
     return True
-    """
-    Returns True if word is in the wordList and is entirely
-    composed of letters in the hand. Otherwise, returns False.
-    Does not mutate hand or wordList.
-    word: string
-    hand: dictionary (string -> int)
-    wordList: list of lowercase strings
-    """
-    # TO DO ... <-- Remove this comment when you code this function
 def main():
     """string"""
     word_1 = input()
