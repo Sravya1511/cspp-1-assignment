@@ -3,6 +3,20 @@
 
 
 def updateHand(hand, word):
+    handnew = {}
+    key = []
+    value = []
+    for i in word:
+        if i in hand.keys():
+            key.append(i)
+            val = hand[i] - 1
+            value.append(val)
+    handnew = dict(zip(key, value))
+    return(handnew)
+            
+
+
+
     """
     Assumes that 'hand' has all the letters in word.
     In other words, this assumes that however many times
@@ -26,12 +40,10 @@ def main():
 	adict={}
 	for i in range(int(n)):
 		data=input()
-		l=data.split()
+		l=data.split(" ")
 		adict[l[0]]=int(l[1])
 	data1=input()
 	print(updateHand(adict,data1))
-		
-
 
 if __name__== "__main__":
 	main()
