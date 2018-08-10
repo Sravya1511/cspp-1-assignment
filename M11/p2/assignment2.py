@@ -2,7 +2,7 @@
 def update_hand(hand_1, word_1):
     """a2"""
     hand_new = dict(hand_1)
-       for i in word_1:
+    for i in word_1:
         if i in hand_1.keys():
             # key.append(i)
             # val = hand[i] - 1
