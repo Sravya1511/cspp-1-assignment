@@ -12,7 +12,7 @@ def main():
     for i_1 in range(int(n_1)):
         data = input()
         l_1 = data.split()
-        adict[l[0]] = int(l_1[1])
+        adict[l_1[0]] = int(l_1[1])
     print(calculate_hand_len(adict))
 if __name__ == "__main__":
     main()
