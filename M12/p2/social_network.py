@@ -29,6 +29,28 @@ def unfollow(network, arg1, arg2):
     pass
 
 def delete_person(network, arg1):
+    # return arg1
+    dict_1 = network
+    if arg1 in dict_1:
+        del dict_1[arg1]
+    dict_2 = dict_1
+    x = []
+    # for i in range(len(dict_1)):
+    # #     for j in range(len(dict_1[i])):
+    # #         if arg1 == dict_1[i[j]]:
+    # #             del dict_1[i[j]]
+    # # return dict_1
+    # if in dict_1.values():
+    #     del dict_1.values[arg1]
+    for i in dict_2:
+        x = dict_2[i]
+        if arg1 in x:
+            x.remove('arg1')
+        dict_2[i] = x
+
+    return dict_2
+
+
     '''
         2 arguments are passed to this function
         network is a dictionary representing the social network
@@ -39,7 +61,7 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
+
 
 def main():
     '''
@@ -57,6 +79,7 @@ def main():
             network = unfollow(network, output[1], output[2])
         elif output[0] == "delete":
             network = delete_person(network, output[1])
+
     print(network)
 
 if __name__ == "__main__":
