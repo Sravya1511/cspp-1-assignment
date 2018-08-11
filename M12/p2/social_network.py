@@ -3,7 +3,6 @@
     There are 3 functions below that have to be completed
     Note: PyLint score need not be 10/10 for this assignment. We expect 9.5/10
 '''
-
 def follow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -14,8 +13,10 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
-
+    for i in network:
+        if i == arg1:
+            network[i].append('arg2')
+    return network
 def unfollow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -26,8 +27,10 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
-
+    for i in network:
+        if i == arg1:
+            network[i].remove('arg2')
+    return network
 def delete_person(network, arg1):
     # return arg1
     dict_1 = network
@@ -47,6 +50,10 @@ def delete_person(network, arg1):
     #     if arg1 in dict_2[i]:
     #         dict_2[i].remove('arg1')
     #     # dict_2[i] = x
+    for i in dict_2:
+        if arg1 in dict_2[i]:
+            dict_2[i].remove('arg1')
+
 
     return dict_2
 
