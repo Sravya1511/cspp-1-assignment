@@ -15,7 +15,7 @@ def create_social_network(data):
             # value.append(list1[j+1])
     # for i in range(len(list1)-1):
     for i in range(len(list_1)):
-        if list1_1[i] == "follows":
+        if list_1[i] == "follows":
             j = i+1
             value.append(list_1[j])
         #     print(j)
