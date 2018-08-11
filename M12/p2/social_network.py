@@ -4,8 +4,7 @@
     Note: PyLint score need not be 10/10 for this assignment. We expect 9.5/10
 '''
 def follow(network, arg1, arg2):
-    '''
-        3 arguments are passed to this function
+"""3 arguments are passed to this function
         network is a dictionary representing the social network
         arg1 and arg2 are two people in the network
         follow function is called when arg1 wants to follows arg2
@@ -16,7 +15,7 @@ def follow(network, arg1, arg2):
     for i in network:
         if i == arg1:
             network[i].append('arg2')
-    return network
+    return network"""
 def unfollow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
@@ -71,12 +70,8 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-
-
 def main():
-    '''
-        handling testcase input and printing output
-    '''
+"""main"""
     network = eval(input())
     lines = int(input())
     for i in range(lines):
@@ -89,7 +84,6 @@ def main():
             network = unfollow(network, output[1], output[2])
         elif output[0] == "delete":
             network = delete_person(network, output[1])
-
     print(network)
 if __name__ == "__main__":
     main()
