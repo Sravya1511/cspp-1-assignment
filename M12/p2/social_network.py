@@ -43,10 +43,10 @@ def delete_person(network, arg1):
     # if in dict_1.values():
     #     del dict_1.values[arg1]
     for i in dict_2:
-        x = dict_2[i]
-        if arg1 in x:
-            x.remove('arg1')
-        dict_2[i] = x
+        # x = dict_2[i]
+        if arg1 in dict_2[i]:
+            dict_2[i].remove('arg1')
+        # dict_2[i] = x
 
     return dict_2
 
@@ -81,6 +81,5 @@ def main():
             network = delete_person(network, output[1])
 
     print(network)
-
 if __name__ == "__main__":
     main()
