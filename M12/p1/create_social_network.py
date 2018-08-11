@@ -27,8 +27,8 @@ def create_social_network(data):
     dictionary_ = dict(zip(key_1, value_1))
                 # if i == len(list1)
                 # i = i+1
-    return dictionary_                
-    '''
+    return dictionary_
+'''
         The data argument passed to the function is a string
         It represents simple social network data
         In this social network data there are people following other people
