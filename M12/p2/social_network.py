@@ -11,11 +11,11 @@ def follow(network, arg1, arg2):
         so, this should result in adding arg2 to the followers list of arg1
         update the network dictionary and return it
     '''
-    # remove the pass below and start writing your code
+    # remove the pass below and start writing your code"""
     for i in network:
         if i == arg1:
             network[i].append('arg2')
-    return network"""
+    return network
 def unfollow(network, arg1, arg2):
     '''
         3 arguments are passed to this function
