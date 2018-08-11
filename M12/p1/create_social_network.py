@@ -1,7 +1,7 @@
 """Assignment-1 Create Social Network"""
 def create_social_network(data):
     """split"""
-    list_1 = data.split (' ')
+    list_1 = data.split(' ')
     key_1 = []
     value_1 = []
     dictionary_ = {}
