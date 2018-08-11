@@ -34,19 +34,19 @@ def delete_person(network, arg1):
     if arg1 in dict_1:
         del dict_1[arg1]
     dict_2 = dict_1
-    x = []
-    # for i in range(len(dict_1)):
-    # #     for j in range(len(dict_1[i])):
-    # #         if arg1 == dict_1[i[j]]:
-    # #             del dict_1[i[j]]
-    # # return dict_1
-    # if in dict_1.values():
-    #     del dict_1.values[arg1]
-    for i in dict_2:
-        # x = dict_2[i]
-        if arg1 in dict_2[i]:
-            dict_2[i].remove('arg1')
-        # dict_2[i] = x
+    # x = []
+    # # for i in range(len(dict_1)):
+    # # #     for j in range(len(dict_1[i])):
+    # # #         if arg1 == dict_1[i[j]]:
+    # # #             del dict_1[i[j]]
+    # # # return dict_1
+    # # if in dict_1.values():
+    # #     del dict_1.values[arg1]
+    # for i in dict_2:
+    #     # x = dict_2[i]
+    #     if arg1 in dict_2[i]:
+    #         dict_2[i].remove('arg1')
+    #     # dict_2[i] = x
 
     return dict_2
 
