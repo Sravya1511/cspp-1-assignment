@@ -5,16 +5,16 @@ def create_social_network(data):
     key_1 = []
     value_1 = []
     dictionary_ = {}
-    x = 1
     j = 0
     # return list1
     # for i in range(len(list1)):
-    for i in range(len(list_1)):
+    a_1 = len(list_1)
+    for i in range(a_1):
         if list_1[i] == "follows":
             key_1.append(list_1[i-1])
             # value.append(list1[j+1])
     # for i in range(len(list1)-1):
-    for i in range(len(list_1)):
+    for i in range(a_1):
         if list_1[i] == "follows":
             j = i+1
             value.append(list_1[j])

@@ -37,6 +37,7 @@ def delete_person(network, arg1):
     if arg1 in dict_1:
         del dict_1[arg1]
     dict_2 = dict_1
+    x = []
     # x = []
     # # for i in range(len(dict_1)):
     # # #     for j in range(len(dict_1[i])):
