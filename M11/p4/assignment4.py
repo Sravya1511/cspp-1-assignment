@@ -2,8 +2,10 @@
 def calculate_hand_len(hand_1):
     """sum"""
     sum_1 = 0
-    for i_1 in hand_1:
+    for i_1 in hand_1.keys():
+        # print(i_1)
         sum_1 = sum_1 + hand_1[i_1]
+        # print(hand_1[i_1])
     return sum_1
 def main():
     """sum"""
