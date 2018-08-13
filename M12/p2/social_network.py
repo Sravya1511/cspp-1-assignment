@@ -20,7 +20,10 @@ def follow(network, arg1, arg2):
     #         l_1.append(arg2)
     #         network[i] = l_1
     # return network
-    network[arg1].append(arg2)
+    if arg1 in network:
+        network[arg1].append(arg2)
+    else:
+        network[arg1]= list(arg2)
     return network
 def unfollow(network, arg1, arg2):
     '''
