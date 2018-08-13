@@ -159,7 +159,7 @@ def updateHand(hand, word):
     for i in word:
         if i in hand_updated.keys():
             hand_updated[i] = hand_updated[i] - 1
-    return hand_updated
+    return hand_updated  
 
 #
 # Problem #3: Test word validity
