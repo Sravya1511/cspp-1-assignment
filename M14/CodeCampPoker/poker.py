@@ -85,12 +85,12 @@ def hand_rank(hand):
     # max in poker function uses these return values to select the best hand
     if is_straight(hand) == True and is_flush(hand) == True:
         return 3
-    elif is_straight(hand) == True:
+    if is_straight(hand) == True:
         return 1
-    elif is_flush(hand) == True:
+    if is_flush(hand) == True:
         return 2
-    else:
-        return 0
+    return 0
+    
 def poker(hands):
     # print(is_flush(hands))
     # print(is_straight(hands))
