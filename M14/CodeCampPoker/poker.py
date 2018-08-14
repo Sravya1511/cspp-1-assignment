@@ -12,12 +12,12 @@ def is_straight(hand):
     hand_new = []
 
     for i in hand:
-    if i[0] in name_cards.keys():
-       temp = name_cards[i[0]]
-    else: 
-        temp = int(i[0])
-    hand_new.append(temp)
-    print(x)
+        if i[0] in name_cards.keys():
+            temp = name_cards[i[0]]
+        else: 
+            temp = int(i[0])
+        hand_new.append(temp)
+    
 
     for i in range(len(hand_new)):
         l = []
