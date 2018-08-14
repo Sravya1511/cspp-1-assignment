@@ -106,21 +106,65 @@ def playGame(wordList):
  
     1) Asks the user to input 'n' or 'r' or 'e'.
         * If the user inputs 'e', immediately exit the game.
-        * If the user inputs anything that's not 'n', 'r', or 'e', keep asking them again.
+        * If the user inputs anything that's not 'n', 'r', or 'e', keep asking them again."""
+    hand = dealHand(HAND_SIZE)
+    hand_2 = dict(hand)
+    global last_hand
+    last_hand = dict(hand)
+    print("enter n or r or e")
+    letter = input()
+    if letter == 'e':
+        exit()
+    if letter != 'e' or 'n' or 'r':
+        print("enter n or r or e")
+        letter = input()
+  
 
-    2) Asks the user to input a 'u' or a 'c'.
-        * If the user inputs anything that's not 'c' or 'u', keep asking them again.
+    if letter == 'n':
+        
+        print("type u for user or c for computer")
+        letter = input()
+        if letter != 'u' or 'c':
+            print("enter u or c")
+            letter = input()
+        if letter == 'u':
+            print(displayHand(hand_2))
+            playHand(hand_2, wordList, HAND_SIZE)
+        if letter == 'c':
+            compChooseWord(hand, wordList, HAND_SIZE)
+            compPlayHand(hand, wordList, HAND_SIZE)
 
-    3) Switch functionality based on the above choices:
-        * If the user inputted 'n', play a new (random) hand.
-        * Else, if the user inputted 'r', play the last hand again.
+    if letter == 'r':
+        last_hand = dict(hand)
+        print("type u for user or c for computer")
+        letter = input()
+        if letter != 'u' or 'c':
+            print("enter u or c")
+            letter = input()
+        if letter == 'u':
+            print(displayHand(last_hand))
+            playHand(last_hand, wordList, HAND_SIZE)
+        if letter == 'c':
+            compChooseWord(last_hand, wordList, HAND_SIZE)
+            compPlayHand(last_hand, wordList, HAND_SIZE)
+
+        
+
+
+
+    # 2) Asks the user to input a 'u' or a 'c'.
+    #     * If the user inputs anything that's not 'c' or 'u', keep asking them again.
+
+    # 3) Switch functionality based on the above choices:
+    #     * If the user inputted 'n', play a new (random) hand.
+    #     * Else, if the user inputted 'r', play the last hand again.
       
-        * If the user inputted 'u', let the user play the game
-          with the selected hand, using playHand.
-        * If the user inputted 'c', let the computer play the 
-          game with the selected hand, using compPlayHand.
+    #     * If the user inputted 'u', let the user play the game
+    #       with the selected hand, using playHand.
+    #     * If the user inputted 'c', let the computer play the 
+    #       game with the selected hand, using compPlayHand.
 
-    4) After the computer or user has played the hand, repeat from step 1
+    # 4) After the computer or user has played the hand, repeat from step 1
 
     wordList: list (string)
     """
@@ -129,10 +173,13 @@ def playGame(wordList):
 
         
 #
-# Build data structures used for entire session and play game
-#
+# Build data structures used for entire session and play game"""
+
 if __name__ == '__main__':
     wordList = loadWords()
     playGame(wordList)
+
+
+
 
 
