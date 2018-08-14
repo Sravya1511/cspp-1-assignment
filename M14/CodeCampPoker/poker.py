@@ -33,15 +33,13 @@ def is_straight(hand):
     if c_1 == (2*(len(hand_new))-2):
         return True
     return False
-    '''
-        How do we find out if the given hand is a straight?
+"""    How do we find out if the given hand is a straight?
         The hand has a list of cards represented as strings.
         There are multiple ways of checking if the hand is a straight.
         Do we need both the characters in the string? No.
         The first character is good enough to determine a straight
         Think of an algorithm: given the card face value how to check if it a straight
-        Write the code for it and return True if it is a straight else return False
-    '''
+        Write the code for it and return True if it is a straight else return False"""
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
