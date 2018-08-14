@@ -3,9 +3,7 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-
 def is_straight(hand):
-    
     # results = ["1", "2", "3"]
     # hand = [int(i) for i in hand]
     name_cards = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
@@ -14,7 +12,7 @@ def is_straight(hand):
     for i in hand:
         if i[0] in name_cards.keys():
             temp = name_cards[i[0]]
-        else: 
+        else:
             temp = int(i[0])
         hand_new.append(temp)
     # for i in range(len(hand_new)):
@@ -92,8 +90,6 @@ def hand_rank(hand):
         return 2
     else: 
         return 0
-
-
 def poker(hands):
     # print(is_flush(hands))
     # print(is_straight(hands))
