@@ -5,7 +5,7 @@
 '''
 
 def is_straight(hand):
-    print(hand)
+    
     # results = ["1", "2", "3"]
     # hand = [int(i) for i in hand]
     name_cards = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
@@ -17,23 +17,21 @@ def is_straight(hand):
         else: 
             temp = int(i[0])
         hand_new.append(temp)
-    
-
-    for i in range(len(hand_new)):
-        l = []
-        l.append(int(hand[i][0]))
-        print(l)
+    # for i in range(len(hand_new)):
+    #     l = []
+    #     l.append(int(hand[i][0]))
+    #     print(l)
     # length = len(l)
     # print(length)
         c = 0
-        for i in l:
+        for i in hand_new:
             temp = i
-            if temp+1 in l:
+            if temp+1 in hand_new:
                 c = c+1
-            if temp-1 in l:
+            if temp-1 in hand_new:
                 c = c+1
     # print("lent",l)
-        if c == (2*(len(l))-2):
+        if c == (2*(len(hand_new))-2):
             return True
         else:
             return False
@@ -57,14 +55,14 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    for i in range(len(hand)):
-        l = []
-        l.append(hand[i][1])
-        print(l)
-        for i in range(len(l)-1):
-            if l[i] != l[i+1]:
-                return False
-            return True
+    # for i in range(len(hand)):
+    #     l = []
+    #     l.append(hand[i][1])
+    #     # print(l)
+    for i in range(len(hand)-1):
+        if hand[i] != hand[i+1]:
+            return False
+    return True
 
 
     
