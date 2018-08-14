@@ -23,18 +23,18 @@ def is_straight(hand):
     #     print(l)
     # length = len(l)
     # print(length)
-        c = 0
-        for i in hand_new:
-            temp = i
-            if temp+1 in hand_new:
-                c = c+1
-            if temp-1 in hand_new:
-                c = c+1
+    c = 0
+    for i in hand_new:
+        temp = i
+        if temp+1 in hand_new:
+            c = c+1
+        if temp-1 in hand_new:
+            c = c+1
     # print("lent",l)
-        if c == (2*(len(hand_new))-2):
-            return True
-        else:
-            return False
+    if c == (2*(len(hand_new))-2):
+        return True
+    else:
+        return False
     '''
         How do we find out if the given hand is a straight?
         The hand has a list of cards represented as strings.
