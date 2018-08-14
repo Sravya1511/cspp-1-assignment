@@ -60,7 +60,7 @@ def is_flush(hand):
     #     l.append(hand[i][1])
     #     # print(l)
     for i in range(len(hand)-1):
-        if hand[i] != hand[i+1]:
+        if hand[i][1] != hand[i+1][1]:
             return False
     return True
 
