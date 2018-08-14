@@ -282,7 +282,7 @@ def playHand(hand, wordList, n):
             print("guess correct word")
             print("enter a word")
             word = input()
-    playGame1(wordList)
+    playGame(wordList)
     return " "
 
 
@@ -293,7 +293,7 @@ def playHand(hand, wordList, n):
 # Problem #5: Playing a game
 # 
 
-def playGame1(wordList):
+def playGame(wordList):
     """
     Allow the user to play an arbitrary number of hands
 
@@ -310,7 +310,6 @@ def playGame1(wordList):
     print("enter n to play new game, r to play last game, e to exit")
 
     letter = input()
-    global last_hand
     
     if letter == 'n':
         hand = dealHand(HAND_SIZE)
