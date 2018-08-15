@@ -7,6 +7,7 @@ def is_straight(hand):
     """straight"""
     # results = ["1", "2", "3"]
     # hand = [int(i) for i in hand]
+    print(hand)
     name_cards = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
     hand_new = []
 
@@ -50,6 +51,60 @@ def is_flush(hand):
         if hand[i][1] != hand[i+1][1]:
             return False
     return True
+
+def four_of_a_kind(hand):
+    for i in range(len(hand)):
+        four = 0
+        for j in hand:
+            if hand[i][0] == j[0]:
+                four = four+1
+        if four == 4:
+            return True
+    return False
+    
+def three_of_a_kind(hand):
+    three = 0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+                three = three+1
+            # print(three)
+    if three == 11:
+        return True
+    return False
+
+def one_pair(hand):
+    one_pair = 0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+                one_pair = one_pair+1
+            # print(two)
+    if one_pair == 7:
+        return True
+    return False
+
+def two_pair(hands):
+    two_pair = 0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+                two_pair = two_pair+1
+            # print(two)
+    if two_pair == 9:
+        return True
+    return False
+
+def full_house(hands):
+    full_house = 0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+                full_house = full_house+1
+    if full_house == 13:
+        return True
+    return False
+    
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to

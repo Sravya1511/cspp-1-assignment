@@ -71,7 +71,7 @@ def hangman(secret_word):
 	word_size = len(secret_word)
 	guess_string = ""
 	print("The letter contains ", word_size)
-	print('The word is ', secret_word)
+	# print('The word is ', secret_word)
 	available_guess = word_size
 	while available_guess > 0:
 		guess_character = input("Enter a character ")
