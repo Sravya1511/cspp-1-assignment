@@ -100,13 +100,13 @@ def two_pair(hand):
     return False
 def full_house(hand):
     """fullHouse"""
-    full_house = 0
+    full_h = 0
     len_1 = len(hand)
     for i in range(len_1):
         for j in hand:
             if hand[i][0] == j[0]:
-                full_house = full_house+1
-    if full_house == 13:
+                full_h = full_h+1
+    if full_h == 13:
         return True
     return False
 def hand_rank(hand):
