@@ -84,7 +84,7 @@ def one_pair(hand):
         return True
     return False
 
-def two_pair(hands):
+def two_pair(hand):
     two_pair = 0
     for i in range(len(hand)): 
         for j in hand:
@@ -95,7 +95,7 @@ def two_pair(hands):
         return True
     return False
 
-def full_house(hands):
+def full_house(hand):
     full_house = 0
     for i in range(len(hand)): 
         for j in hand:
