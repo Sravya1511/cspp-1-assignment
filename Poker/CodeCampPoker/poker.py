@@ -51,9 +51,10 @@ def is_flush(hand):
         if hand[i][1] != hand[i+1][1]:
             return False
     return True
-
 def four_of_a_kind(hand):
-    for i in range(len(hand)):
+    """four of kind"""
+    len_1 = len(hand)
+    for i in range(len_1):
         four = 0
         for j in hand:
             if hand[i][0] == j[0]:
@@ -61,10 +62,11 @@ def four_of_a_kind(hand):
         if four == 4:
             return True
     return False
-    
 def three_of_a_kind(hand):
+    """three of a kind"""
     three = 0
-    for i in range(len(hand)): 
+    len_1 = len(hand)
+    for i in range(len_1): 
         for j in hand:
             if hand[i][0] == j[0]:
                 three = three+1
@@ -72,10 +74,11 @@ def three_of_a_kind(hand):
     if three == 11:
         return True
     return False
-
 def one_pair(hand):
+    """onepair"""
     one_pair = 0
-    for i in range(len(hand)): 
+    len_1 = len(hand)
+    for i in range(len_1): 
         for j in hand:
             if hand[i][0] == j[0]:
                 one_pair = one_pair+1
@@ -83,10 +86,11 @@ def one_pair(hand):
     if one_pair == 7:
         return True
     return False
-
 def two_pair(hand):
+    """two pair"""
     two_pair = 0
-    for i in range(len(hand)): 
+    len_1 = len(hand)
+    for i in range(len_1): 
         for j in hand:
             if hand[i][0] == j[0]:
                 two_pair = two_pair+1
@@ -94,17 +98,17 @@ def two_pair(hand):
     if two_pair == 9:
         return True
     return False
-
 def full_house(hand):
+    """fullHouse"""
     full_house = 0
-    for i in range(len(hand)): 
+    len_1 = len(hand)
+    for i in range(len_1): 
         for j in hand:
             if hand[i][0] == j[0]:
                 full_house = full_house+1
     if full_house == 13:
         return True
-    return False
-    
+    return False    
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
