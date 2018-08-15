@@ -66,7 +66,7 @@ def three_of_a_kind(hand):
     """three of a kind"""
     three = 0
     len_1 = len(hand)
-    for i in range(len_1): 
+    for i in range(len_1):
         for j in hand:
             if hand[i][0] == j[0]:
                 three = three+1
@@ -78,7 +78,7 @@ def one_pair(hand):
     """onepair"""
     one_pair = 0
     len_1 = len(hand)
-    for i in range(len_1): 
+    for i in range(len_1):
         for j in hand:
             if hand[i][0] == j[0]:
                 one_pair = one_pair+1
@@ -90,7 +90,7 @@ def two_pair(hand):
     """two pair"""
     two_pair = 0
     len_1 = len(hand)
-    for i in range(len_1): 
+    for i in range(len_1):
         for j in hand:
             if hand[i][0] == j[0]:
                 two_pair = two_pair+1
@@ -102,13 +102,13 @@ def full_house(hand):
     """fullHouse"""
     full_house = 0
     len_1 = len(hand)
-    for i in range(len_1): 
+    for i in range(len_1):
         for j in hand:
             if hand[i][0] == j[0]:
                 full_house = full_house+1
     if full_house == 13:
         return True
-    return False    
+    return False
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
