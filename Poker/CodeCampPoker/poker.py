@@ -76,26 +76,26 @@ def three_of_a_kind(hand):
     return False
 def one_pair(hand):
     """onepair"""
-    one_pair = 0
+    one_p = 0
     len_1 = len(hand)
     for i in range(len_1):
         for j in hand:
             if hand[i][0] == j[0]:
-                one_pair = one_pair+1
+                one_p = one_p+1
             # print(two)
-    if one_pair == 7:
+    if one_p == 7:
         return True
     return False
 def two_pair(hand):
     """two pair"""
-    two_pair = 0
+    two_p = 0
     len_1 = len(hand)
     for i in range(len_1):
         for j in hand:
             if hand[i][0] == j[0]:
-                two_pair = two_pair+1
+                two_p = two_p+1
             # print(two)
-    if two_pair == 9:
+    if two_p == 9:
         return True
     return False
 def full_house(hand):
