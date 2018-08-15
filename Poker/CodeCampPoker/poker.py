@@ -7,7 +7,7 @@ def is_straight(hand):
     """straight"""
     # results = ["1", "2", "3"]
     # hand = [int(i) for i in hand]
-    print(hand)
+    # print(hand)
     name_cards = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
     hand_new = []
 
