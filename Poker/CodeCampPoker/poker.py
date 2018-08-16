@@ -62,7 +62,7 @@ def four_of_a_kind(hand):
                     four = four+1
         if four == 3:
             return True
-        return False
+    return False
 def three_of_a_kind(hand):
     """three of a kind"""
     three = 0
@@ -75,7 +75,7 @@ def three_of_a_kind(hand):
             # print(three)
         if three == 2:
             return True
-        return False
+    return False
 def one_pair(hand):
     """onepair"""
     one_p = 0
