@@ -60,9 +60,9 @@ def four_of_a_kind(hand):
             if i!=j:
                 if hand[i][0] == hand[j][0]:
                     four = four+1
-    if four == 4:
-        return True
-    return False
+        if four == 3:
+            return True
+        return False
 def three_of_a_kind(hand):
     """three of a kind"""
     three = 0
@@ -73,9 +73,9 @@ def three_of_a_kind(hand):
                 if hand[i][0] == hand[j][0]:
                     three = three+1
             # print(three)
-    if three == 3:
-        return True
-    return False
+        if three == 2:
+            return True
+        return False
 def one_pair(hand):
     """onepair"""
     one_p = 0
