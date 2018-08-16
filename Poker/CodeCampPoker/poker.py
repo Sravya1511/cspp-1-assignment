@@ -54,24 +54,26 @@ def is_flush(hand):
 def four_of_a_kind(hand):
     """four of kind"""
     len_1 = len(hand)
+    four = 0
     for i in range(len_1):
-        four = 0
-        for j in hand:
-            if hand[i][0] == j[0]:
-                four = four+1
-        if four == 4:
-            return True
+        for j in range(len_1):
+            if i!=j:
+                if hand[i][0] == hand[j][0]:
+                    four = four+1
+    if four == 4:
+        return True
     return False
 def three_of_a_kind(hand):
     """three of a kind"""
     three = 0
     len_1 = len(hand)
     for i in range(len_1):
-        for j in hand:
-            if hand[i][0] == j[0]:
+        for j in range(len_1):
+            if i!=j:
+                if hand[i][0] == hand[j][0]:
                 three = three+1
             # print(three)
-    if three == 11:
+    if three == 3:
         return True
     return False
 def one_pair(hand):
