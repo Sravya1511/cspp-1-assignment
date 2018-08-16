@@ -122,7 +122,7 @@ def high_card(hand):
     return False
 def comparision_high_card(hand):
     for i in hand:
-        if i == 'A':
+        if i[0] == 'A':
             return True
     return False
 def hand_rank(hand):
