@@ -109,6 +109,17 @@ def full_house(hand):
     if full_h == 13:
         return True
     return False
+def high_card(hand):
+    """fullHouse"""
+    high = 0
+    len_1 = len(hand)
+    for i in range(len_1):
+        for j in hand:
+            if hand[i][0] == j[0]:
+                high = high+1
+    if high == 5:
+        return True
+    return False
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -134,20 +145,22 @@ def hand_rank(hand):
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
     if is_straight(hand) and is_flush(hand):
-        return 8
+        return 9
     if four_of_a_kind(hand):
-        return 7
+        return 8
     if full_house(hand):
-        return 6
+        return 7
     if is_flush(hand):
-        return 5
+        return 6
     if is_straight(hand):
-        return 4
+        return 5
     if three_of_a_kind(hand):
-        return 3
+        return 4
     if two_pair(hand):
-        return 2
+        return 3
     if one_pair(hand):
+        return 2
+    if high_card(hand):
         return 1
     return 0
 
