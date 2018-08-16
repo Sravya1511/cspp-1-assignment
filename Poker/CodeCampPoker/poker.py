@@ -71,7 +71,7 @@ def three_of_a_kind(hand):
         for j in range(len_1):
             if i!=j:
                 if hand[i][0] == hand[j][0]:
-                three = three+1
+                    three = three+1
             # print(three)
     if three == 3:
         return True
