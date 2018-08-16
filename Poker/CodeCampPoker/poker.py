@@ -120,11 +120,11 @@ def high_card(hand):
     if high == 5:
         return True
     return False
-def comparision_high_card(hand):
-    for i in hand:
-        if i[0] == 'A':
-            return True
-    return False
+# def comparision_high_card(hand):
+#     for i in hand:
+#         if i[0] == 'A':
+#             return True
+    # return False
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -166,9 +166,10 @@ def hand_rank(hand):
     if one_pair(hand):
         return 2
     if high_card(hand):
-        if comparision_high_card(hand):
-            return 1.2
-        return 1.1
+        # if comparision_high_card(hand):
+        #     return 1.2
+        # return 1.1
+        return 1
     return 0
 
 def poker(hands):
