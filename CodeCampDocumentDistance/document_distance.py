@@ -12,8 +12,6 @@ def similarity(dict1, dict2):
     # str2.strip()
     # list1 = str1.lower().split()
     # list2 = str2.lower().split()
-   
-    
 
     # stopwords = load_stopwords("stopwords.txt")
     # for i in list1:
@@ -61,23 +59,23 @@ def similarity(dict1, dict2):
     # res = numerator//denominator
     # return res
     regex = re.compile('[^a-z]')
-    words1 =[regex.sub("",w.strip()) for w in dict1.lower().split(" ")]
-    words2 =[regex.sub("",w.strip()) for w in dict2.lower().split(" ")]
+    words1 = [regex.sub("" , w.strip()) for w in dict1.lower().split(" ")]
+    words2 = [regex.sub("" , w.strip()) for w in dict2.lower().split(" ")]
 
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
     for w in words1:
-        if w not in stopwords and len(w)>0:
+        if w not in stopwords and len(w) > 0:
             if w not in dictionary.keys():
-                dictionary[w]=[0,0]
-            dictionary[w][0]+=1
+                dictionary[w] = [0,0]
+            dictionary[w][0] += 1
 
 
     for w in words2:
-        if w not in stopwords and len(w)>0:
+        if w not in stopwords and len(w) > 0:
             if w not in dictionary.keys():
-                dictionary[w]=[0,0]
-            dictionary[w][1]+=1
+                dictionary[w] = [0,0]
+            dictionary[w][1] += 1
 
     num = sum([v1*v2 for v1,v2 in dictionary.values()])
     den1 =  math.sqrt((sum([v1**2 for v1,v2 in dictionary.values()])))
