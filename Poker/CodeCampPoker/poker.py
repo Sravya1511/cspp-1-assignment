@@ -198,7 +198,7 @@ def poker(hands):
     # 
 
     lst = list(map(hand_rank,hands))
-    print(lst)
+    # print(lst)
     maxTemp = max(lst)
     countMAx = lst.count(maxTemp)
     if countMAx == 1 :  
