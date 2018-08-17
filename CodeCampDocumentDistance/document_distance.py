@@ -51,7 +51,7 @@ def similarity(dict1, dict2):
     s2 = 0
     for i in dic:
         s1 = s1 + (dic[i][0]**2)
-        s2 = s2 + (dic[i][0]**2)
+        s2 = s2 + (dic[i][1]**2)
     sq1 = math.sqrt(s1)
     sq2 = math.sqrt(s2)
     denominator = sq1*sq2
