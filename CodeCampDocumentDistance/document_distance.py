@@ -6,12 +6,11 @@ def similarity(dict1, dict2):
     
     str1 = str(dict1)
     str2 = str(dict2)
+    str1.strip()
+    str2.strip()
     list1 = str1.lower().split()
     list2 = str2.lower().split()
-    # print(list1)
-    # print(list2)
-    list1.strip()
-    list2.strip()
+   
     print(list1)
     print(list2)
 
