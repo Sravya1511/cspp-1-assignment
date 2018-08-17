@@ -4,10 +4,12 @@
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
 def kind(face_values, num):
+"""face"""
     for face in face_values:
         if face_values.count(face) == num:
             return face
 def get_facevalues(hand):
+    """sorted"""
     return sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse = True)
 def is_straight(hand):
     '''
@@ -62,7 +64,7 @@ def hand_rank(hand):
     face_values = get_facevalues(hand)
     return ((8, face_values) if is_flush(hand) and is_straight(hand) else
             (7, kind(face_values, 4), face_values) if kind(face_values, 4) else
-            (6, kind(face_values, 3), kind(face_values, 2)) 
+            (6, kind(face_values, 3), kind(face_values, 2))
             if  kind(face_values, 3) and kind(face_values, 2) else
             (5, face_values) if is_flush(hand) else
             (4, face_values) if is_straight(hand) else
