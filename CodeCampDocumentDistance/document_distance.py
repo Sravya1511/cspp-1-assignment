@@ -55,7 +55,8 @@ def similarity(dict1, dict2):
     sq1 = math.sqrt(s1)
     sq2 = math.sqrt(s2)
     denominator = sq1*sq2
-    return numerator/denominator
+    res = numerator/denominator
+    return round(res, 1)
 
 
 
