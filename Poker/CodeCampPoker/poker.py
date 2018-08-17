@@ -195,7 +195,7 @@ def poker(hands):
     # hand_rank is a function passed to max
     # hand_rank takes a hand and returns its rank
     # max uses the rank returned by hand_rank and returns the best hand
-    return max(hands, key=hand_rank)
+    # return max(hands, key=hand_rank)
 
 
     lst = list(map(hand_rank,hands))
@@ -221,21 +221,41 @@ def poker(hands):
     #     hands_temp = hands.copy()
     #     hands_temp.sort()
     else: 
+        name_cards = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
+        l1_new = []
+        l1 = hands[0]
+        l2 = hands[1]
+        l2_new = []
+        for i in l1:
+            if i[0] in name_cards.keys():
+                temp = name_cards[i[0]]
+            else:
+                temp = int(i[0])
+            l1_new.append(temp)
+#       print(l1_new)
+        for i in l2:
+            if i[0] in name_cards.keys():
+                temp = name_cards[i[0]]
+            else:
+                temp = int(i[0])
+            l2_new.append(temp)
+        # print(l2_new)
+        hands = [l1_new, l2_new]
+        # print(hands)
         l_m = []
         for i in range(len(hands)):
             l1 = hands[i]
             l1.sort()
             l1.reverse()
-        l_m.append(l1)
+            l_m.append(l1)
+        # print(l_m)
+        # print(l_m[0][4])
+        for i in range(0, 4, 1):
+            if l_m[0][i] > l_m[1][i]:
+                return(l_m[0])
+            else:
+                return(l_m[1])
 
-# l_m.reverse()
-# print(l_m)
-# print(l_m[0][4][0])
-    for i in range(0, 4, 1):
-        if l_m[0][i][0] > l_m[1][i][0]:
-            return l_m[0]
-        else:
-            return l_m[1]
 
 
 if __name__ == "__main__":
