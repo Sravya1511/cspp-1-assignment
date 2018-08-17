@@ -221,8 +221,9 @@ def poker(hands):
     #     # print(Temp_hands2[i])
     #     hands_temp = hands.copy()
     #     hands_temp.sort()
-    else: 
+    else:
         hand_dup = hands[:]
+
         name_cards = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
         l1_new = []
         l1 = hands[0]
@@ -255,7 +256,7 @@ def poker(hands):
         for i in range(0, 5, 1):
             if l_m[0][i] > l_m[1][i]:
                 return hand_dup[0]
-            else:
+            elif l_m[0][i] < l_m[1][i]:
                 return hand_dup[1]
 
 
