@@ -65,18 +65,18 @@ def similarity(dict1, dict2):
 
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
-    for w in words1:
-        if w not in stopwords and len(w) > 0:
-            if w not in dictionary.keys():
-                dictionary[w] = [0, 0]
-            dictionary[w][0] += 1
+    for w_1 in words1:
+        if w_1 not in stopwords and len(w_1) > 0:
+            if w_1 not in dictionary.keys():
+                dictionary[w_1] = [0, 0]
+            dictionary[w_1][0] += 1
 
 
-    for w in words2:
-        if w not in stopwords and len(w) > 0:
-            if w not in dictionary.keys():
-                dictionary[w] = [0, 0]
-            dictionary[w][1] += 1
+    for w_1 in words2:
+        if w_1 not in stopwords and len(w_1) > 0:
+            if w_1 not in dictionary.keys():
+                dictionary[w_1] = [0, 0]
+            dictionary[w_1][1] += 1
 
     num = sum([v1*v2 for v1, v2 in dictionary.values()])
     den1 = math.sqrt((sum([v1**2 for v1, v2 in dictionary.values()])))
