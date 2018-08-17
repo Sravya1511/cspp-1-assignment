@@ -3,7 +3,7 @@
 '''
 
 def similarity(dict1, dict2):
-    
+    dic = {}
     str1 = str(dict1)
     str2 = str(dict2)
     str1.strip()
@@ -11,23 +11,40 @@ def similarity(dict1, dict2):
     list1 = str1.lower().split()
     list2 = str2.lower().split()
    
-    print(list1)
-    print(list2)
+    
 
     stopwords = load_stopwords("stopwords.txt")
     for i in list1:
         if i in stopwords:
             list1.remove(i)
-    print(list1)
+    # print(list1)
     for i in list2:
         if i in stopwords:
             list2.remove(i)
+    # print(list2)
+    print(list1)
     print(list2)
+    list3 = list1 + list2
+    print(list3)
+    # for i in list1:
+    #     if i not in dic:
+    #         dic[i] = list1.count(i)
+    # print(dic)
+    # for i in list2:
+    #     if i in dic:
+    #         dic[i] = dic[i].append(str(list2.count(i)))
+    #     if i not in dic:
+    #         dic[i] = list2.count(i)
+    # print(dic)
+    for i in list3:
+        if i not in dic:
+            dic[i] = [list1.count(i), list2.count(i)]
+    print(dic)
 
     '''
         Compute the document distance as given in the PDF
     '''
-    pass
+    
 
 def load_stopwords(filename):
     '''
