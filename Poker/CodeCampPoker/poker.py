@@ -235,6 +235,8 @@ def poker(hands):
     for i in range(len(l_m)):
         if l_m[0][i][0] > l_m[1][i][0]:
             return l_m[0]
+        else:
+            return l_m[1]
 
 
 if __name__ == "__main__":
