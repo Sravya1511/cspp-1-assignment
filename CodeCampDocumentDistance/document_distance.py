@@ -41,14 +41,14 @@ def similarity(dict1, dict2):
         if i not in dic:
             dic[i] = [list1.count(i), list2.count(i)]
     # print(dic)
-    numerator = 0
+    numerator = 0.0
     for i in dic:
         a = dic[i][0]
         b = dic[i][1]
         numerator = numerator + a*b
     # print(numerator)
-    s1 = 0
-    s2 = 0
+    s1 = 0.0
+    s2 = 0.0
     for i in dic:
         s1 = s1 + (dic[i][0]**2)
         s2 = s2 + (dic[i][1]**2)
@@ -56,7 +56,7 @@ def similarity(dict1, dict2):
     sq2 = math.sqrt(s2)
     denominator = sq1*sq2
     res = numerator/denominator
-    return round(res, 1)
+    return res
 
 
 
