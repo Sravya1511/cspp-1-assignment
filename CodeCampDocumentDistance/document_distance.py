@@ -41,6 +41,9 @@ def similarity(dict1, dict2):
             dic[i] = [list1.count(i), list2.count(i)]
     print(dic)
 
+    for i in dic:
+        print(dic[i][0])
+
     '''
         Compute the document distance as given in the PDF
     '''
