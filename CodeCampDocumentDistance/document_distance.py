@@ -83,13 +83,6 @@ def similarity(dict1, dict2):
     den2 = math.sqrt((sum([v2**2 for v1, v2 in dictionary.values()])))
 
     return num/(den1*den2)
-
-
-
-    '''
-        Compute the document distance as given in the PDF
-    '''
-
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
