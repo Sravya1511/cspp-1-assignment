@@ -196,7 +196,7 @@ def poker(hands):
     # hand_rank takes a hand and returns its rank
     # max uses the rank returned by hand_rank and returns the best hand
     # return max(hands, key=hand_rank)
-    
+
 
     lst = list(map(hand_rank,hands))
     # print(lst)
@@ -232,7 +232,7 @@ def poker(hands):
 # l_m.reverse()
 # print(l_m)
 # print(l_m[0][4][0])
-    for i in range(0, 4, 1):
+    for i in range(0, 5):
         if l_m[0][i][0] > l_m[1][i][0]:
             return l_m[0]
 
