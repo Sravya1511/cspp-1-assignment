@@ -252,7 +252,7 @@ def poker(hands):
             l_m.append(l1)
         # print(l_m)
         # print(l_m[0][4])
-        for i in range(0, 4, 1):
+        for i in range(0, 5, 1):
             if l_m[0][i] > l_m[1][i]:
                 return hand_dup[0]
             else:
