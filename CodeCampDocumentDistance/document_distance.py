@@ -25,38 +25,38 @@ def similarity(dict1, dict2):
     # print(list2)
     # print(list1)
     # print(list2)
-    list3 = list1 + list2
+    # list3 = list1 + list2
     # print(list3)
-    # for i in list1:
-    #     if i not in dic:
-    #         dic[i] = list1.count(i)
-    # print(dic)
-    # for i in list2:
-    #     if i in dic:
-    #         dic[i] = dic[i].append(str(list2.count(i)))
-    #     if i not in dic:
-    #         dic[i] = list2.count(i)
-    # print(dic)
-    for i in list3:
+    for i in list1:
         if i not in dic:
-            dic[i] = [list1.count(i), list2.count(i)]
-    # print(dic)
-    numerator = 0.0
-    for i in dic:
-        a = dic[i][0]
-        b = dic[i][1]
-        numerator = numerator + a*b
-    # print(numerator)
-    s1 = 0.0
-    s2 = 0.0
-    for i in dic:
-        s1 = s1 + (dic[i][0]**2)
-        s2 = s2 + (dic[i][1]**2)
-    sq1 = math.sqrt(s1)
-    sq2 = math.sqrt(s2)
-    denominator = sq1*sq2
-    res = numerator//denominator
-    return res
+            dic[i] = [list1.count(i)]
+    print(dic)
+    for i in list2:
+        if i in dic:
+            dic[i].append(str(list2.count(i)))
+        if i not in dic:
+            dic[i] = [list2.count(i)]
+    print(dic)
+    # for i in list3:
+    #     if i not in dic:
+    #         dic[i] = [list1.count(i), list2.count(i)]
+    # # print(dic)
+    # numerator = 0.0
+    # for i in dic:
+    #     a = dic[i][0]
+    #     b = dic[i][1]
+    #     numerator = numerator + a*b
+    # # print(numerator)
+    # s1 = 0.0
+    # s2 = 0.0
+    # for i in dic:
+    #     s1 = s1 + (dic[i][0]**2)
+    #     s2 = s2 + (dic[i][1]**2)
+    # sq1 = math.sqrt(s1)
+    # sq2 = math.sqrt(s2)
+    # denominator = sq1*sq2
+    # res = numerator//denominator
+    # return res
 
 
 

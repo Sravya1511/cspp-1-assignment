@@ -223,7 +223,7 @@ def poker(hands):
     #     hands_temp.sort()
     else:
         hand_dup = hands[:]
-
+        
         name_cards = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
         l1_new = []
         l1 = hands[0]

@@ -3,16 +3,12 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-
 def kind(face_values, num):
     for face in face_values:
         if face_values.count(face) == num:
             return face
-    
-
 def get_facevalues(hand):
     return sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse = True)
-
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
@@ -24,11 +20,10 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     face_values = get_facevalues(hand)
-    if face_values == [14,5,4,3,2]:
-        face_values = [5,4,3,2,1]
+    if face_values == [14, 5, 4, 3, 2]:
+        face_values = [5, 4, 3, 2, 1]
     set_face_values = set(face_values)
     return (len(set_face_values) == 5) and ((max(set_face_values) - min(set_face_values)) == 4)
-
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -40,7 +35,6 @@ def is_flush(hand):
     '''
     set_ = set([suite for face, suite in hand])
     return len(set_) == 1
-
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -73,7 +67,7 @@ def hand_rank(hand):
             (5, face_values) if is_flush(hand) else
             (4, face_values) if is_straight(hand) else
             (3, kind(face_values, 3), face_values) if kind(face_values, 3) else
-            (2, kind(face_values, 2), kind(sorted(face_values), 2), face_values) 
+            (2, kind(face_values, 2), kind(sorted(face_values), 2), face_values)
             if kind(face_values, 2) and kind(sorted(face_values), 2) else
             (1, kind(face_values, 2), face_values) if kind(face_values, 2) else
             (0, face_values))
