@@ -66,7 +66,7 @@ def four_of_a_kind(hand):
     return False
 def three_of_a_kind(hand):
     """three of a kind"""
-    len_1 = len(hand)
+        len_1 = len(hand)
     for i in range(len_1):
         three = 0
         for j in range(len_1):
@@ -195,7 +195,33 @@ def poker(hands):
     # hand_rank is a function passed to max
     # hand_rank takes a hand and returns its rank
     # max uses the rank returned by hand_rank and returns the best hand
-    return max(hands, key=hand_rank)
+    # 
+
+    lst = list(map(hand_rank,hands))
+    print(lst)
+    maxTemp = max(lst)
+    countMAx = lst.count(maxTemp)
+    if countMAx == 1 :  
+        return hands[lst.index(maxTemp)]
+    else :
+        # temp_hands =[]
+        # for i in lst:
+        #     if i == maxTemp:
+        #         temp_hands.append(hands[lst.index(i)])
+        # # T=map(sortedList,temp_hands,)
+        # Temp_hands2=hands.copy()
+        # Temp_Ranks
+        # k=0
+        # for i in temp_hands:
+        #     Temp_hands2[k] = sorted(i, reverse = True)
+        #     k+=1
+        # TempMax = max(Temp_hands2)
+        # Max_index=Temp_hands2.index(TempMax)
+        # print(Temp_hands2[i])
+        hands_temp = hands.copy()
+        hands_temp.sort()
+         
+
 
 if __name__ == "__main__":
     # read the number of test cases
