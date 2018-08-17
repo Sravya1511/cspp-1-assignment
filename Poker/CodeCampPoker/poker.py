@@ -195,7 +195,7 @@ def poker(hands):
     # hand_rank is a function passed to max
     # hand_rank takes a hand and returns its rank
     # max uses the rank returned by hand_rank and returns the best hand
-    # 
+    return max(hands, key=hand_rank)
 
     lst = list(map(hand_rank,hands))
     # print(lst)
@@ -220,11 +220,24 @@ def poker(hands):
     #     # print(Temp_hands2[i])
     #     hands_temp = hands.copy()
     #     hands_temp.sort()
+    else: 
+        l_m = []
+        for i in range(len(hands)):
+            l1 = hands[i]
+            l1.sort()
+            l1.reverse()
+        l_m.append(l1)
 
+# l_m.reverse()
+# print(l_m)
+# print(l_m[0][4][0])
+    for i in range(0, 4, 1):
+        if l_m[0][i][0] > l_m[1][i][0]:
+            return l_m[0]
 
 
 if __name__ == "__main__":
-    # read the number of test cases
+    # read the nmber of test cases
     COUNT = int(input())
     # iterate through the test cases to set up hands list
     HANDS = []
