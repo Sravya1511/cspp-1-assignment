@@ -202,7 +202,8 @@ def poker(hands):
     maxTemp = max(lst)
     countMAx = lst.count(maxTemp)
     if countMAx == 1 :  
-        return hands[lst.index(maxTemp)]
+        # return hands[lst.index(maxTemp)]
+        return max(hands, key=hand_rank)
     # else :
     #     # temp_hands =[]
     #     # for i in lst:
