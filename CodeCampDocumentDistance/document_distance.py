@@ -78,8 +78,8 @@ def similarity(dict1, dict2):
             dictionary[w][1] += 1
 
     num = sum([v1*v2 for v1,v2 in dictionary.values()])
-    den1 =  math.sqrt((sum([v1**2 for v1,v2 in dictionary.values()])))
-    den2 =  math.sqrt((sum([v2**2 for v1,v2 in dictionary.values()])))
+    den1 =  math.sqrt((sum([v1**2 for v1 , v2 in dictionary.values()])))
+    den2 =  math.sqrt((sum([v2**2 for v1 , v2 in dictionary.values()])))
 
     return num/(den1*den2)
 
