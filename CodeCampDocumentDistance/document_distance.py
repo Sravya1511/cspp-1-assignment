@@ -5,6 +5,7 @@ import math
 import re
 
 def similarity(dict1, dict2):
+    """similarity"""
     # dic = {}
     # str1 = str(dict1)
     # str2 = str(dict2)
@@ -59,27 +60,27 @@ def similarity(dict1, dict2):
     # res = numerator//denominator
     # return res
     regex = re.compile('[^a-z]')
-    words1 = [regex.sub("" , w.strip()) for w in dict1.lower().split(" ")]
-    words2 = [regex.sub("" , w.strip()) for w in dict2.lower().split(" ")]
+    words1 = [regex.sub("", w.strip()) for w in dict1.lower().split(" ")]
+    words2 = [regex.sub("", w.strip()) for w in dict2.lower().split(" ")]
 
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
     for w in words1:
         if w not in stopwords and len(w) > 0:
             if w not in dictionary.keys():
-                dictionary[w] = [0,0]
+                dictionary[w] = [0, 0]
             dictionary[w][0] += 1
 
 
     for w in words2:
         if w not in stopwords and len(w) > 0:
             if w not in dictionary.keys():
-                dictionary[w] = [0,0]
+                dictionary[w] = [0, 0]
             dictionary[w][1] += 1
 
-    num = sum([v1*v2 for v1,v2 in dictionary.values()])
-    den1 =  math.sqrt((sum([v1**2 for v1, v2 in dictionary.values()])))
-    den2 =  math.sqrt((sum([v2**2 for v1, v2 in dictionary.values()])))
+    num = sum([v1*v2 for v1, v2 in dictionary.values()])
+    den1 = math.sqrt((sum([v1**2 for v1, v2 in dictionary.values()])))
+    den2 = math.sqrt((sum([v2**2 for v1, v2 in dictionary.values()])))
 
     return num/(den1*den2)
 
@@ -88,7 +89,6 @@ def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    
 
 def load_stopwords(filename):
     '''
