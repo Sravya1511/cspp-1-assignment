@@ -252,9 +252,9 @@ def poker(hands):
         # print(l_m[0][4])
         for i in range(0, 4, 1):
             if l_m[0][i] > l_m[1][i]:
-                return(l_m[0])
+                return(hands[0])
             else:
-                return(l_m[1])
+                return(hands[1])
 
 
 
