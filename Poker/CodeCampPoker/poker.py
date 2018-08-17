@@ -195,11 +195,10 @@ def poker(hands):
     # hand_rank is a function passed to max
     # hand_rank takes a hand and returns its rank
     # max uses the rank returned by hand_rank and returns the best hand
-    # return max(hands, key=hand_rank)
+    return max(hands, key=hand_rank)
 
 
     lst = list(map(hand_rank,hands))
-    # print(lst)
     maxTemp = max(lst)
     countMAx = lst.count(maxTemp)
     if countMAx == 1 :  
