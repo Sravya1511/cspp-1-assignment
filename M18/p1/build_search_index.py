@@ -47,6 +47,7 @@ def word_list(text):
             list1.remove(i)
     regex = re.compile('[^a-z]')
     words1 = [regex.sub("", w.strip()) for w in list1]
+    print(words1)
 
     return words1
     # regex = re.compile('[^a-z]')
@@ -86,7 +87,7 @@ def build_search_index(docs):
     # print(list_2)
     for i in list_2:
     	# if i not in stopwords:
-        if i not in dic:
+        # if i not in dic:
             for j in range(len(list_1)):
                 str1 = list_1[j]
                 list_temp = str1.split(" ")
