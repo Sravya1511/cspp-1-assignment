@@ -74,9 +74,9 @@ def build_search_index(docs):
     # return search index
     stopwords = load_stopwords("stopwords.txt")
     list_1 = docs
-    for i in list_1:
-        if i in stopwords:
-            list_1.remove(i)
+    # for i in list_1:
+    #     if i in stopwords:
+    #         list_1.remove(i)
     dic = {}
     list_2 = word_list(docs)
     # print(list_1)
