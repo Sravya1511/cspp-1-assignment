@@ -75,8 +75,8 @@ def build_search_index(docs):
     dic = {}
     list_1 = docs
     list_2 = word_list(docs)
-    print(list_1)
-    print(list_2)
+    # print(list_1)
+    # print(list_2)
     for i in list_2:
         if i not in dic:
             for j in range(len(list_1)):
