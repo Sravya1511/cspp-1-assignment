@@ -44,7 +44,8 @@ def search(search_index, query):
         l = search_index[query]
         for i in range(len(l)):
             s.add(l[i][0])
-            return s
+            print(s)
+    return 0
 
 
 
@@ -60,8 +61,7 @@ def process_queries(search_index, queries):
     for i in queries:
         # if i in search_index:
         p = search(search_index, i)
-        return p
-        
+               
 
 
 def main():
