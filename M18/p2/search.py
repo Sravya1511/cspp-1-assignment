@@ -42,7 +42,7 @@ def search(search_index, query):
     print(q)
     for i in search_index.keys():
 
-        if query == i:
+        if q == i:
     # if query in search_index.keys():
             # print("yes")
             l = search_index[query]
