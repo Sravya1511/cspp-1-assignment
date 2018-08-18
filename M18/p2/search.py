@@ -44,6 +44,8 @@ def search(search_index, query):
     #     print(i)
     for i in search_index:
         # i_1 = list(i)
+        print(str(query))
+        print(str(i))
         if str(query) == str(i):
             return True
         else:
