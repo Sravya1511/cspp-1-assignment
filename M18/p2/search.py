@@ -42,8 +42,8 @@ def search(search_index, query):
     q_1 = st_1.lower()
     # print(q)
     for i in search_index.keys():
-        y_1 = str(i)
-        if q_1 == y_1:
+    
+        if q_1 == i:
     # if query in search_index.keys():
             # print("yes")
             l_1 = search_index[query]
