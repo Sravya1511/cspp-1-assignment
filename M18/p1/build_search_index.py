@@ -85,16 +85,16 @@ def build_search_index(docs):
     # print(list_1)
     # print(list_2)
     for i in list_2:
-    	if i not in stopwords:
-            if i not in dic:
-                for j in range(len(list_1)):
-                    str1 = list_1[j]
-                    list_temp = str1.split(" ")
-                    if i in list_temp:
-                        if i not in dic:
-                            dic[i] = [(j, list_temp.count(i))]
-                        else:
-                            dic[i].append((j, list_temp.count(i)))
+    	# if i not in stopwords:
+        if i not in dic:
+            for j in range(len(list_1)):
+                str1 = list_1[j]
+                list_temp = str1.split(" ")
+                if i in list_temp:
+                    if i not in dic:
+                        dic[i] = [(j, list_temp.count(i))]
+                    else:
+                        dic[i].append((j, list_temp.count(i)))
     return dic
     # b = word_list(docs)
     # print(b)
