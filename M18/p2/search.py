@@ -61,10 +61,10 @@ def process_queries(search_index, queries):
         print the results returned by search function
     '''
     # print(queries)
-    for m in queries:
+    for m_1 in queries:
         # if i in search_index:
-        p = search(search_index, m)
-        print(p)
+        p_1 = search(search_index, m_1)
+        print(p_1)
 
 
 def main():
