@@ -40,19 +40,22 @@ def word_list(text):
         return a list of words
     '''
     str1 = str(text)
-    # list1 = str1.lower().split(" ")
-    # stopwords = load_stopwords("stopwords.txt")
-    # for i in list1:
-    #     if i in stopwords:
-    #         list1.remove(i)
-    # return list1
+    list1 = str1.lower().split(" ")
+    stopwords = load_stopwords("stopwords.txt")
+    for i in list1:
+        if i in stopwords:
+            list1.remove(i)
     regex = re.compile('[^a-z]')
-    words1 = [regex.sub("", w.strip()) for w in str1.lower().split(" ")]
-    # stopwords = load_stopwords("stopwords.txt")
-    # for i in words1:
-    #     if i in stopwords:
-    #         words1.remove(i)
+    words1 = [regex.sub("", w.strip()) for w in list1]
+
     return words1
+    # regex = re.compile('[^a-z]')
+    # words1 = [regex.sub("", w.strip()) for w in str1.lower().split(" ")]
+    # # stopwords = load_stopwords("stopwords.txt")
+    # # for i in words1:
+    # #     if i in stopwords:
+    # #         words1.remove(i)
+    # return words1
     
 
 
