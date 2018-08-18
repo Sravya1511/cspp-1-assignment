@@ -39,8 +39,9 @@ def search(search_index, query):
     '''
     s_1 = set()
     st_1 = str(query)
-    q_1 = st_1.lower().split()
+    q_1 = st_1.lower()
     # print(q)
+    print(q_1)
     if q_1 in search_index.keys():
         l_1 = search_index[q_1]
         len_1 = len(l_1)
