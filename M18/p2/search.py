@@ -44,6 +44,7 @@ def search(search_index, query):
     #     print(i)
     for i in search_index.keys():
         if query == i:
+            return true
             l = search_index[i]
             for i in range(len(l)):
                 s.add(l[i][0])
