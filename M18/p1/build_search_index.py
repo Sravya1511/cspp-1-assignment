@@ -56,7 +56,7 @@ def word_list(text):
     # #     if i in stopwords:
     # #         words1.remove(i)
     # return words1
-    
+
 
 
 def build_search_index(docs):
@@ -99,7 +99,7 @@ def build_search_index(docs):
     # b = word_list(docs)
     # print(b)
 
-    
+
 
 # helper function to print the search index
 # use this to verify how the search index looks
