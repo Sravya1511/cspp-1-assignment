@@ -52,7 +52,7 @@ def search(search_index, query):
     #     if word in search_index.keys():
     #         for each in search_index[word]:
     #             s1.add(each[0])
-    # return s1
+    return s1
 
 
 
