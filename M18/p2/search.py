@@ -39,7 +39,7 @@ def search(search_index, query):
     '''
     s_1 = set()
     st_1 = str(query)
-    q_1 = st_1.lower()
+    q_1 = st_1.lower().split()
     # print(q)
     if q_1 in search_index.keys():
         l_1 = search_index[q_1]
