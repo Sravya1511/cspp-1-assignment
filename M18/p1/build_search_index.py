@@ -75,7 +75,7 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    stopwords = load_stopwords("stopwords.txt")
+    # stopwords = load_stopwords("stopwords.txt")
     list_1 = docs
     # for i in list_1:
     #     if i in stopwords:
