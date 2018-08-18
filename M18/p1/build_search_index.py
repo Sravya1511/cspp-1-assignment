@@ -48,7 +48,6 @@ def word_list(text):
     # return list1
     regex = re.compile('[^a-z]')
     words1 = [regex.sub("", w.strip()) for w in str1.lower().split(" ")]
-    # return words1
     stopwords = load_stopwords("stopwords.txt")
     for i in words1:
         if i in stopwords:
