@@ -40,13 +40,14 @@ def search(search_index, query):
     s = set()
     query_1 = str(query)
     print(query_1)
+    # for i in search_index.keys():
+    #     print(i)
     for i in search_index.keys():
-        print(i)
-    # if query_1 in search_index.keys():
-    #     l = search_index[query]
-    #     for i in range(len(l)):
-    #         s.add(l[i][0])
-    # return s
+        if qurey == i:
+            l = search_index[i]
+            for i in range(len(l)):
+                s.add(l[i][0])
+    return s
 
 
 
