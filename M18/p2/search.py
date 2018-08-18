@@ -39,19 +39,19 @@ def search(search_index, query):
     '''
     s = set()
     # query_1 = (query)
-    print(query)
-    for i in search_index.keys():
-        print(i)
+    # print(query)
     # for i in search_index.keys():
-    #     i_1 = list(i)
-    #     if query_1 == i_1:
-    #         return True
-    #     else:
-    #         return False
-    #         l = search_index[i]
-    #         for i in range(len(l)):
-    #             s.add(l[i][0])
-    # # return s
+    #     print(i)
+    for i in search_index.keys():
+        # i_1 = list(i)
+        if str(query) == str(i):
+            return True
+        else:
+            return False
+            l = search_index[i]
+            for i in range(len(l)):
+                s.add(l[i][0])
+    # return s
 
 
 
