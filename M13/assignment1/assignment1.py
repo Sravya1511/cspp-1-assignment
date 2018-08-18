@@ -328,8 +328,6 @@ def playGame(wordList):
         print("enter valid line")
     
 
-
-
 #
 # Build data structures used for entire session and play game
 #
