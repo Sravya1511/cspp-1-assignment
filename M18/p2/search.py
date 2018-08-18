@@ -47,10 +47,12 @@ def search(search_index, query):
         # print(str(query))
         # print(str(i))
         if str(query) == str(i):
+            print(str(query))
+            print(str(i))
             l = search_index[i]
             for i in range(len(l)):
                 s.add(l[i][0])    
-    return s
+        return s
 
 
 
