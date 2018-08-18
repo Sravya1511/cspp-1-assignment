@@ -51,8 +51,8 @@ def word_list(text):
     stopwords = load_stopwords("stopwords.txt")
     for i in words1:
         if i in stopwords:
-            words_new = words1.remove(i)
-    return words_new
+            words1.remove(i)
+    return words1
     
 
 
