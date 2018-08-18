@@ -39,6 +39,7 @@ def search(search_index, query):
     '''
     s = set()
     query_1 = str(query)
+    print(query_1)
     if query_1 in search_index.keys():
         l = search_index[query]
         for i in range(len(l)):
