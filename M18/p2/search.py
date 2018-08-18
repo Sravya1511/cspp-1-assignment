@@ -48,6 +48,7 @@ def search(search_index, query):
                 s.add(l[i][0])
                 print(s)
             return s
+    return s
 
 
 
