@@ -41,7 +41,7 @@ def search(search_index, query):
     st_1 = str(query)
     q_1 = st_1.lower().split()
     # print(q)
-    print(q_1)
+    # print(q_1)
     for i in q_1:
         if i in search_index.keys():
             l_1 = search_index[i]
