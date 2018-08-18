@@ -60,8 +60,7 @@ def process_queries(search_index, queries):
     for i in queries:
         # if i in search_index:
         p = search(search_index, i)
-        print(p)
-    return 0
+        return p
         
 
 
