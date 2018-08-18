@@ -68,7 +68,7 @@ def process_queries(search_index, queries):
 
 
 def main():
-'''
+    '''
         main function
     '''
     # This line loads the search index
