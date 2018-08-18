@@ -45,6 +45,7 @@ def word_list(text):
     for i in list1:
         if i in stopwords:
             list1.remove(i)
+    print(list1)
     regex = re.compile('[^a-z]')
     words1 = [regex.sub("", w.strip()) for w in list1]
     print(words1)
