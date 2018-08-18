@@ -39,21 +39,22 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    str1 = str(text)
-    # list1 = str1.lower().split(" ")
+    # str1 = str(text)
+    # # list1 = str1.lower().split(" ")
+    # # stopwords = load_stopwords("stopwords.txt")
+    # # for i in list1:
+    # #     if i in stopwords:
+    # #         list1.remove(i)
+    # # return list1
+    # regex = re.compile('[^a-z]')
+    # words1 = [regex.sub("", w.strip()) for w in str1.lower().split(" ")]
+    # # return words1
     # stopwords = load_stopwords("stopwords.txt")
-    # for i in list1:
+    # for i in words1:
     #     if i in stopwords:
-    #         list1.remove(i)
-    # return list1
-    regex = re.compile('[^a-z]')
-    words1 = [regex.sub("", w.strip()) for w in str1.lower().split(" ")]
+    #         words1.remove(i)
     # return words1
-    stopwords = load_stopwords("stopwords.txt")
-    for i in words1:
-        if i in stopwords:
-            words1.remove(i)
-    return words1
+    return text
 
 
 def build_search_index(docs):
@@ -72,8 +73,10 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    b = word_list(docs)
-    print(b)
+    list_1 = word_list(docs)
+    print(list1)
+
+    
 
 # helper function to print the search index
 # use this to verify how the search index looks
