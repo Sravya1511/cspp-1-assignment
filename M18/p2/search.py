@@ -38,7 +38,7 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     s_1 = set()
-    q_1 = str(query)
+    q_1 = query.lower()
     # print(q)
     for i in search_index.keys():
         y_1 = str(i)
@@ -73,7 +73,6 @@ def main():
     '''
     # This line loads the search index
     search_index = eval(input())
-
     # read the number of search queries
     lines = int(input())
     # read the search queries into a list
