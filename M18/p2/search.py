@@ -38,7 +38,8 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     s_1 = set()
-    q_1 = query.lower()
+    st_1 = str(query)
+    q_1 = st_1.lower()
     # print(q)
     for i in search_index.keys():
         y_1 = str(i)
