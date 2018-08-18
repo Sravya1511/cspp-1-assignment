@@ -38,13 +38,13 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     s = set()
-    query_1 = str(query)
+    # query_1 = str(query)
     # print(query_1)
     # for i in search_index.keys():
     #     print(i)
     for i in search_index.keys():
-        i_1 = str(i)
-        if query_1 == i_1:
+        # i_1 = str(i)
+        if query == i:
             return True
         else:
             return False
