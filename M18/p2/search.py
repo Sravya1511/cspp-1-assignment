@@ -38,20 +38,20 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     s = set()
-    query_1 = list(query)
-    # print(query_1)
-    # for i in search_index.keys():
-    #     print(i)
+    # query_1 = (query)
+    print(query_1)
     for i in search_index.keys():
-        i_1 = list(i)
-        if query_1 == i_1:
-            return True
-        else:
-            return False
-            l = search_index[i]
-            for i in range(len(l)):
-                s.add(l[i][0])
-    # return s
+        print(i)
+    # for i in search_index.keys():
+    #     i_1 = list(i)
+    #     if query_1 == i_1:
+    #         return True
+    #     else:
+    #         return False
+    #         l = search_index[i]
+    #         for i in range(len(l)):
+    #             s.add(l[i][0])
+    # # return s
 
 
 
