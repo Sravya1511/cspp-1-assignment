@@ -38,15 +38,15 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     s_1 = set()
-    q = str(query)
+    q_1 = str(query)
     # print(q)
     for i in search_index.keys():
-        y = str(i)
-        if q == y:
+        y_1 = str(i)
+        if q_1 == y_1:
     # if query in search_index.keys():
             # print("yes")
-            l = search_index[query]
-            for i in range(len(l)):
+            l_1 = search_index[query]
+            for i in range(len(l_1)):
                 s_1.add(l[i][0])
             return s_1
     return s_1
@@ -66,7 +66,6 @@ def process_queries(search_index, queries):
         print(p)
 
 
-
 def main():
     '''
         main function
@@ -76,7 +75,6 @@ def main():
 
     # read the number of search queries
     lines = int(input())
-    
     # read the search queries into a list
     queries = []
     for i in range(lines):
