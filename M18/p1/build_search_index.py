@@ -92,7 +92,7 @@ def build_search_index(docs):
     #                 else:
     #                     dic[i].append((j, list_temp.count(i)))
     # return dic
-    b = word_list(text)
+    b = word_list(docs)
     print(b)
 
     
