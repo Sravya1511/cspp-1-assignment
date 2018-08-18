@@ -40,7 +40,7 @@ def search(search_index, query):
     s = set()
     query_1 = str(query)
     if query_1 in search_index.keys():
-        return True
+        print("yes")
         l = search_index[query]
         for i in range(len(l)):
             s.add(l[i][0])
