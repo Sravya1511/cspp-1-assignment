@@ -39,22 +39,22 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    # str1 = str(text)
-    # # list1 = str1.lower().split(" ")
-    # # stopwords = load_stopwords("stopwords.txt")
-    # # for i in list1:
-    # #     if i in stopwords:
-    # #         list1.remove(i)
-    # # return list1
-    # regex = re.compile('[^a-z]')
-    # words1 = [regex.sub("", w.strip()) for w in str1.lower().split(" ")]
-    # # return words1
+    str1 = str(text)
+    # list1 = str1.lower().split(" ")
     # stopwords = load_stopwords("stopwords.txt")
-    # for i in words1:
+    # for i in list1:
     #     if i in stopwords:
-    #         words1.remove(i)
+    #         list1.remove(i)
+    # return list1
+    regex = re.compile('[^a-z]')
+    words1 = [regex.sub("", w.strip()) for w in str1.lower().split(" ")]
     # return words1
-    return text
+    stopwords = load_stopwords("stopwords.txt")
+    for i in words1:
+        if i in stopwords:
+            words1.remove(i)
+    return words1
+    
 
 
 def build_search_index(docs):
@@ -73,8 +73,22 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    list_1 = word_list(docs)
-    print(list1)
+    dic = {}
+    list_1 = docs
+    list_2 = word_list(docs)
+    print(list_1)
+    print(list_2)
+    for i in list_2:
+        if i not in dic:
+            for j in range(len(list_1)):
+                str1 = list_1[j]
+                list_temp = str1.split(" ")
+                if i in list_temp:
+                    if i not in dic:
+                        dic[i] = [(j, list_temp.count(i))]
+                    else:
+                        dic[i].append((j, list_temp.count(i)))
+    return dic
 
     
 
