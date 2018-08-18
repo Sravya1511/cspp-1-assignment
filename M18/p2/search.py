@@ -42,14 +42,11 @@ def search(search_index, query):
     q_1 = st_1.lower()
     # print(q)
     if q_1 in search_index.keys():
-        
-    # if query in search_index.keys():
-            # print("yes")
-            l_1 = search_index[q_1]
-            len_1 = len(l_1)
-            for i in range(len_1):
-                s_1.add(l_1[i][0])
-            return s_1
+        l_1 = search_index[q_1]
+        len_1 = len(l_1)
+        for i in range(len_1):
+            s_1.add(l_1[i][0])
+        return s_1
     return s_1
 
 
