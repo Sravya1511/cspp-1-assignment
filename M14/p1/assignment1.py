@@ -64,6 +64,7 @@ WORDLIST_FILENAME = 'words.txt'
 # Helper code End
 
 class Message(object):
+    """message"""
     ### DO NOT MODIFY THIS METHOD ###
     def __init__(self, text):
         self.message_text = text
