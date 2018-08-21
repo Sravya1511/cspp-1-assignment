@@ -81,7 +81,7 @@ class Message(object):
     def get_valid_words(self):
         '''
         Used to safely access a copy of self.valid_words outside of the class
-        
+
         Returns: a COPY of self.valid_words
         '''
         return self.valid_words[:]
@@ -92,7 +92,7 @@ class Message(object):
         The dictionary maps every uppercase and lowercase letter to a
         character shifted down the alphabet by the input shift. The dictionary
         should have 52 keys of all the uppercase letters and all the lowercase
-        letters only.        
+        letters only.
 
         shift (integer): the amount by which to shift every letter of the 
         alphabet. 0 <= shift < 26
@@ -103,22 +103,22 @@ class Message(object):
      #delete this line and replace with your code here
         dic = {}
         import string
-        a = list(string.ascii_lowercase)
-        b = list(string.ascii_uppercase)
-        c = []
-        d = []
-        for i in range(len(a)):
-            if i < (len(a)-shift):
-                c.append(a[i+shift])
-                d.append(b[i+shift])
+        a_1 = list(string.ascii_lowercase)
+        b_1 = list(string.ascii_uppercase)
+        c_1 = []
+        d_1 = []
+        for i in range(len(a_1)):
+            if i < (len(a_1)-shift):
+                c_1.append(a_1[i+shift])
+                d_1.append(b_1[i+shift])
             else:
                 for i in range(shift):
-                    c.append(a[i])
-                    d.append(b[i])
+                    c_1.append(a_1[i])
+                    d_1.append(b_1[i])
                 break
-        a.extend(b)
-        c.extend(d)
-        dic = dict(zip(a, c))
+        a_1.extend(b_1)
+        c_1.extend(d_1)
+        dic = dict(zip(a_1, c_1))
         return dic
     def apply_shift(self, shift):
         '''
