@@ -134,13 +134,13 @@ class Message(object):
 
         '''
         dic = self.build_shift_dict(shift)
-        s = ""
+        s_1 = ""
         for i in self.message_text:
             if i in dic:
-                s = s+dic[i]
+                s_1 = s_1+dic[i]
             else:
-                s = s+i
-        return s
+                s_1 = s_1+i
+        return s_1
 
 
 
