@@ -5,6 +5,7 @@ def create_social_network(data):
     print(data)
     for i in range(len(new_data)-1):
         data_1 = new_data[i].split(" follows ")
+        print(data_1)
 
                 # i = i+1
 '''
