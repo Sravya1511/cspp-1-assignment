@@ -2,7 +2,7 @@
 def create_social_network(data):
     """split"""
     new_data = data.split(" follows ")
-    new_data = data.split("\n")
+    new_data = new_data.split("\n")
     print(new_data)
 
 
