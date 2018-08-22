@@ -10,9 +10,9 @@ def create_social_network(data):
         if len(data_1) <= 1:
             return dic_1
         elif new_data[i] in dic_1:
-            dic_1[i][0].append(dic_1[i][1].split(','))
+            dic_1[i][0].append([i][1].split(','))
         else:
-            dic_1[i][0] = dic_1[i][1].split(',')
+            dic_1[i][0] = [i][1].split(',')
     return dic_1
         
 
