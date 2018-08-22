@@ -1,33 +1,11 @@
 """Assignment-1 Create Social Network"""
 def create_social_network(data):
     """split"""
-    list_1 = data.split(' ')
-    key_1 = []
-    value_1 = []
-    dictionary_ = {}
-    j = 0
-    # return list1
-    # for i in range(len(list1)):
-    a_1 = len(list_1)
-    for i in range(a_1):
-        if list_1[i] == "follows":
-            key_1.append(list_1[i-1])
-            # value.append(list1[j+1])
-    # for i in range(len(list1)-1):
-    for i in range(a_1):
-        if list_1[i] == "follows":
-            j = i+1
-            value.append(list_1[j])
-        #     print(j)
-        #     while list1[j] != key[x]:
-        #         value.append(list1[j+1])
-        #         j = j+1
-        #     x = x+1
-        # i = j
-    dictionary_ = dict(zip(key_1, value_1))
-                # if i == len(list1)
+    data.split(" follows ")
+    print(data)
+
+
                 # i = i+1
-    return dictionary_
 '''
         The data argument passed to the function is a string
         It represents simple social network data
