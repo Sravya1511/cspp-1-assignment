@@ -258,7 +258,7 @@ class CiphertextMessage(Message):
                 if i == b_1[shift]:
                     m = m+i
                 else:
-                    m = m+1
+                    m = m+i
             if m in self.valid_words:
                 return shift
                 return m
