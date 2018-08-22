@@ -263,7 +263,7 @@ class CiphertextMessage(Message):
                     for x in dic:
                         if letter == dic[x]:
                             m = m+x
-                if m in valid_words:
+                if m in self.valid_words:
                     if len(m) == len(message_text):
                         return i, m
 
