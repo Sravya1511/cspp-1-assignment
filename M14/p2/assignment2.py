@@ -147,9 +147,9 @@ class PlaintextMessage(Message):
         #delete this line and replace with your code here"""
         self.message_text = text
         self.valid_words = load_words(WORDLIST_FILENAME)
-        self.shift = shift
-        self.encrypting_dict = self.build_shift_dict(shift)
-        self.message_text_encrypted = Message.apply_shift(self,shift)
+        self.shift = shift*2
+        self.encrypting_dict = self.build_shift_dict(shift*2)
+        self.message_text_encrypted = Message.apply_shift(self,shift*2)
 
     def get_shift(self):
         '''
@@ -167,8 +167,7 @@ class PlaintextMessage(Message):
         Returns: a COPY of self.encrypting_dict
         '''
         #delete this line and replace with your code here
-        dic_new = self.build_shift_dict(shift*2)
-        return dic_new
+        return self.encrypting_dict
 
     def get_message_text_encrypted(self):
         '''
@@ -178,8 +177,7 @@ class PlaintextMessage(Message):
         '''
         #delete this line and replace with your code here
        
-        s_new = self.apply_shift(shift*2)
-        return s_new
+        return self.message_text_encrypted
 
     def change_shift(self, shift):
         '''
