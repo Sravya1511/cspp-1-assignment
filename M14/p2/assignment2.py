@@ -197,12 +197,6 @@ class PlaintextMessage(Message):
 
 
 
-
-        
-
-
-
-
 def main():
     ''' Function to handle testcases '''
     inp = input()

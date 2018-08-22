@@ -247,21 +247,26 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
-        import string
-        m = ""
-        a_1 = list(string.ascii_lowercase)
-        b_1 = list(string.ascii_uppercase)
-        for shift in range(26):
-            for i in self.message_text:
-                if i == a_1[shift]:
-                    m = m+i
-                if i == b_1[shift]:
-                    m = m+i
-                else:
-                    m = m+i
-            if m in self.valid_words:
-                print(shift)
-                print(m)
+        message_text = self.message_text
+
+        message_text = message_text.lower().split(" ")
+        # message_text = message_text.split(" ")
+        # message_text = list(message_text)
+        print(message_text)
+        for word in message_text:
+            message_text = list(word)
+            print(message_text)
+            for i in range(26):
+                dic = self.build_shift_dict(i)
+                m = ""
+                for letter in message_text:
+                    for x in dic:
+                        if letter == dic[x]:
+                            m = m+x
+                if m in valid_words:
+                    if len(m) == len(message_text):
+                        return i, m
+
 
 
 

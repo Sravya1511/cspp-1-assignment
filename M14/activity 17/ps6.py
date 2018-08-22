@@ -135,7 +135,13 @@ class Message(object):
 
         '''
         dic = self.build_shift_dict(shift)
-        pass #delete this line and replace with your code here
+        s = ""
+        for i in self.message_text:
+            if i in dic:
+                s = s+dic[i]
+            else:
+                s = s+i
+        return s
 
 class PlaintextMessage(Message):
     def __init__(self, text, shift):
