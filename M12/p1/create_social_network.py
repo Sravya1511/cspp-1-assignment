@@ -9,12 +9,12 @@ def create_social_network(data):
         # print(data_1)
         if len(data_1) <= 1:
             return dic_1
-        elif data_1[0] in dic_1:
+        if data_1[0] in dic_1:
             dic_1[data_1[0]].append(data_1[1].split(','))
         else:
             dic_1[data_1[0]] = data_1[1].split(',')
     return dic_1
-        
+
 
                 # i = i+1
 '''
@@ -45,8 +45,6 @@ def create_social_network(data):
         Return a empty dictionary if the string format of the data is invalid
         Empty dictionary is not None, it is a dictionary with no keys
     '''
-
-    # remove the pass below and start writing your code
 def main():
     '''
         handling testcase input and printing output
