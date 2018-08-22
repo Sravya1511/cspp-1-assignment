@@ -190,8 +190,15 @@ class PlaintextMessage(Message):
         Returns: nothing
         '''
         #delete this line and replace with your code here
-        return self.encrypting_dict
-        return self.message_text_encrypted
+        shift_new = self.shift*2
+        dic_new = self.build_shift_dict(shift_new)
+        return dic_new
+        s_new = self.apply_shift(shift_new)
+        return s_new
+
+
+
+        
 
 
 
