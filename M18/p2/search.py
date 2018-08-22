@@ -44,8 +44,8 @@ def search(search_index, query):
     # print(q_1)
     for x in q_1:
         if x in search_index.keys():
-            for x in search_index[i]:
-                s_1.add(i[0])
+            for x in search_index[x]:
+                s_1.add(x[0])
     # str1 =  query.lower().split()
 
     # for word in str1:
