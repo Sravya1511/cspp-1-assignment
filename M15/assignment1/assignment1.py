@@ -252,10 +252,10 @@ class CiphertextMessage(Message):
         message_text = message_text.lower().split(" ")
         # message_text = message_text.split(" ")
         # message_text = list(message_text)
-        print(message_text)
+        # print(message_text)
         for word in message_text:
             message_text = list(word)
-            print(message_text)
+            # print(message_text)
             for i in range(26):
                 dic = self.build_shift_dict(i)
                 m = ""
