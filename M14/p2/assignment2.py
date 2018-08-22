@@ -133,7 +133,7 @@ class Message(object):
 ### Paste your implementation of the `PlaintextMessage` class here
 class PlaintextMessage(Message):
     def __init__(self, text, shift):
-       """
+        """
         A PlaintextMessage object inherits from Message and has five attributes:
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words)
