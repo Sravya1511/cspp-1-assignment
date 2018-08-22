@@ -260,8 +260,8 @@ class CiphertextMessage(Message):
                 else:
                     m = m+i
             if m in self.valid_words:
-                return shift
-                return m
+                print(shift)
+                print(m)
 
 
 
