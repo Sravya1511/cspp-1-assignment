@@ -6,7 +6,7 @@ def create_social_network(data):
     # print(data)
     for i in range(len(new_data)-1):
         data_1 = new_data[i].split(" follows ")
-        print(data_1)
+        # print(data_1)
         if len(data_1) <= 1:
             return dic_1
         elif data_1[0] in dic_1:
