@@ -1,8 +1,8 @@
 """Assignment-1 Create Social Network"""
 def create_social_network(data):
     """split"""
-    new_data = data.split(" follows ")
-    new_data = new_data.split("\n")
+    w_data = data.split(" follows ")
+    new_data = w_data.split("\n")
     print(new_data)
 
 
