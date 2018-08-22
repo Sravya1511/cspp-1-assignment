@@ -191,6 +191,7 @@ class PlaintextMessage(Message):
         '''
         #delete this line and replace with your code here
         shift_new = self.shift*2
+        print(shift_new)
         dic_new = self.build_shift_dict(shift_new)
         return dic_new
         s_new = self.apply_shift(shift_new)
