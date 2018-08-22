@@ -42,9 +42,9 @@ def search(search_index, query):
     q_1 = st_1.lower().split()
     # print(q)
     # print(q_1)
-    for i in q_1:
-        if i in search_index.keys():
-            for i in search_index[i]:
+    for x in q_1:
+        if x in search_index.keys():
+            for x in search_index[i]:
                 s_1.add(i[0])
     # str1 =  query.lower().split()
 
