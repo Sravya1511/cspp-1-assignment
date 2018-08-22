@@ -23,7 +23,7 @@ def follow(network, arg1, arg2):
     if arg1 in network:
         network[arg1].append(arg2)
     else:
-        network[arg1]= [arg2]
+        network[arg1] = [arg2]
     return network
 def unfollow(network, arg1, arg2):
     '''
@@ -66,19 +66,6 @@ def delete_person(network, arg1):
 
 
     return dict_2
-
-
-    '''
-        2 arguments are passed to this function
-        network is a dictionary representing the social network
-        arg1 is a person in the network
-        delete_person function is called when arg1 wants to exit from the network
-        so, this should result in deleting arg1 from network
-        also, before deleting arg1, remove arg1 from the everyone's followers list
-        update the network dictionary and return it
-    '''
-    # remove the pass below and start writing your code
-
 
 def main():
     '''
