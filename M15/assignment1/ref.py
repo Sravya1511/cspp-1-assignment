@@ -60,8 +60,7 @@ for word in message_text:
                     m = m+x
         if m in valid_words:
             if len(m) == len(message_text):
-                print(i)
-                print(m)
+                
 
 
 
