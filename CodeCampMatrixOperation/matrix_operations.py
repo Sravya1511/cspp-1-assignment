@@ -16,7 +16,7 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    pass
+    
 
 def read_matrix():
     '''
@@ -27,8 +27,7 @@ def read_matrix():
         error message should be "Error: Invalid input for the matrix"
     '''
     li = []
-    rows = int(input())
-    cols = int(input())
+    rows, cols = int(input())
     for i in range(rows):
         lj = []
         for j in range(cols):
@@ -36,6 +35,8 @@ def read_matrix():
             lj.append(ele)
         li.append(lj)
     print(li)
+
+
 
   
 
@@ -49,6 +50,7 @@ def main():
 
     # multiply matrix 1 and matrix 2
     matrix1 = read_matrix()
+    matrix2 = read_matrix()
 
 if __name__ == '__main__':
     main()
