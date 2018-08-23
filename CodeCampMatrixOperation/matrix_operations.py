@@ -8,7 +8,7 @@ def mult_matrix(m1, m2):
     '''
     pass
 
-def add_matrix(m1, m2):
+def add_matrix(matrix1, matrix2):
     '''
         check if the matrix shapes are similar
         add the matrices and return the result matrix
