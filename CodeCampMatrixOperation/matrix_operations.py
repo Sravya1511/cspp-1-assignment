@@ -66,14 +66,16 @@ def read_matrix():
     # print(li)
     # for j in range(int(r[1])):
     #     k = li[j].split(',')
-    try:
-        for i in range(int(r[0])):
-            ele = list(map(int, input().split()))
-            e.append(ele)
-        return e
-    except: 
-        print("Error: Invalid input for the matrix")
+
+    for i in range(int(r[0])):
+        ele = list(map(int, input().split()))
+        e.append(ele)
+        if len(ele) != int(r[1]):
+            print("Error: Invalid input for the matrix")
+            return
+    return e
     
+
 
 
 
