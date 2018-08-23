@@ -53,7 +53,7 @@ def read_matrix():
         try:
             ele = list(map(int, input().split()))
             e.append(ele)
-        return e
+            return e
         except: 
             print("IndexError: list index out of range")
 
