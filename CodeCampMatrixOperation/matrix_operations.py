@@ -31,7 +31,7 @@ def read_matrix():
     cols = input()
     for i in range(int(rows)):
         lj = []
-        for j in range(int(cols):
+        for j in range(int(cols)):
             ele = int(input())
             lj.append(ele)
         li.append(lj)
