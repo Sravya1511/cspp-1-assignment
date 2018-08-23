@@ -30,6 +30,7 @@ def read_matrix():
     rows = input()
     # cols = input()
     r = rows.split(',')
+    e = []
     # for i in range(int(r[0])):
     #     lj = []
     #     ele = input()
