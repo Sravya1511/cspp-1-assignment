@@ -1,11 +1,5 @@
+"""matrix"""
 def mult_matrix(matrix1, matrix2):
-    '''
-        check if the matrix1 columns = matrix2 rows
-        mult the matrices and return the result matrix
-        print an error message if the matrix shapes are not valid for mult
-        and return None
-        error message should be "Error: Matrix shapes invalid for mult"
-    '''
     """mul"""
     if len(matrix1[0]) == len(matrix2):
         l_row = []
