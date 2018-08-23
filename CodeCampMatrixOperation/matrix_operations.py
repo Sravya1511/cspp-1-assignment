@@ -37,7 +37,6 @@ def read_matrix():
         e = ele.split(',')
         print(e)
         lj.append(e)
-        li.append(lj)
     print(li)
 
 
