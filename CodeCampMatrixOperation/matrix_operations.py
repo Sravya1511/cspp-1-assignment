@@ -28,10 +28,11 @@ def read_matrix():
     '''
     li = []
     rows = input()
-    cols = input()
-    for i in range(int(rows)):
+    # cols = input()
+    r = rows.split(',')
+    for i in range(int(r[0])):
         lj = []
-        for j in range(int(cols)):
+        for j in range(int(r[1])):
             ele = int(input())
             lj.append(ele)
         li.append(lj)
