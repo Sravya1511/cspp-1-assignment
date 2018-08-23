@@ -266,7 +266,7 @@ class CiphertextMessage(Message):
         #                 m = m+x
         #     if m in self.valid_words:
         #         if len(m) == len(message_text):
-                    
+
         for shift in range(27):
             message = PlaintextMessage(self.message_text, shift)
             decrypted = message.get_message_text_encrypted()
@@ -278,7 +278,6 @@ class CiphertextMessage(Message):
                 self.max_valid_words = valid_words_count
                 self.decrypted_message = (26-shift, decrypted)
         return self.decrypted_message
-        
 
 
 
@@ -300,4 +299,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
