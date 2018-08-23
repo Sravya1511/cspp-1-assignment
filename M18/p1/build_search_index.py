@@ -118,7 +118,7 @@ def build_search_index(docs):
         return l2_
     for index, doc in enumerate(docs):
         list_1 = word_list(doc)
-        list_1 = remove(stopwords, list1)
+        list_1 = remove(stopwords, list_1)
         for word in set(list1):
             if word in search_index:
                 search_index[word].append((index, list_1.count(word)))
