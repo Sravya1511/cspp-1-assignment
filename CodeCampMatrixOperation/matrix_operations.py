@@ -51,8 +51,8 @@ def read_matrix():
     #     k = li[j].split(',')
     try:
         for i in range(int(r[0])):
-        ele = list(map(int, input().split()))
-        e.append(ele)
+            ele = list(map(int, input().split()))
+            e.append(ele)
         return e
     except: 
         print("IndexError: list index out of range")
