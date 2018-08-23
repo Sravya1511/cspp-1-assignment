@@ -20,11 +20,10 @@ def add_matrix(matrix1, matrix2):
         b = []
         for i in range(len(matrix1)):
             a = []
-            for j in range(len(matrix1[i])):
-                ele = matrix1[i][j]+matrix2[i][j]
-                a.append(ele,)
+            for j in range(len(matrix1[i])): 
+                a.append(matrix1[i][j]+matrix2[i][j])
         b.append(ele)
-    print(b)
+    return b
 
 def read_matrix():
     '''
