@@ -1,4 +1,4 @@
-def mult_matrix(m1, m2):
+def mult_matrix(matrix1, matrix2):
     '''
         check if the matrix1 columns = matrix2 rows
         mult the matrices and return the result matrix
@@ -18,6 +18,7 @@ def mult_matrix(m1, m2):
                     s = s+(matrix1[j][k]*matrix2[k][j])
         l1.append(s)
     l2.append(l1)
+    return l2
 
 
 
@@ -90,6 +91,8 @@ def main():
     matrix2 = read_matrix()
     add = add_matrix(matrix1, matrix2)
     print(add)
+    mul = mult_matrix(matrix1, matrix2)
+    print(mul)
 
 if __name__ == '__main__':
     main()
