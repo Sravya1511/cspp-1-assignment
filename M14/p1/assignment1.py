@@ -114,8 +114,8 @@ class Message(object):
                 c_1.append(a_1[i+shift])
                 d_1.append(b_1[i+shift])
             else:
-                for i in range(shift):
-                    c_1.append(a_1[i])
+                for j in range(shift):
+                    c_1.append(a_1[j])
                     d_1.append(b_1[i])
                 break
         a_1.extend(b_1)
