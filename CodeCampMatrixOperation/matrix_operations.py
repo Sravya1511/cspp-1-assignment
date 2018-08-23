@@ -72,7 +72,7 @@ def read_matrix():
         e.append(ele)
         if len(ele) != int(r[1]):
             print("Error: Invalid input for the matrix")
-            return
+            return None
     return e
     
 
@@ -95,12 +95,11 @@ def main():
     # multiply matrix 1 and matrix 2
     matrix1 = read_matrix()
     matrix2 = read_matrix()
-    # for i in range(len(matrix1)):
-    #     if len(matrix[i]) != 
-    add = add_matrix(matrix1, matrix2)
-    print(add)
-    mul = mult_matrix(matrix1, matrix2)
-    print(mul)
+    if (matrix1 != None and matrix2 != None):
+        add = add_matrix(matrix1, matrix2)
+        print(add)
+        mul = mult_matrix(matrix1, matrix2)
+        print(mul)
 
 if __name__ == '__main__':
     main()
