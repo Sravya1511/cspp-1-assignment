@@ -3,11 +3,13 @@ def mult_matrix(matrix1, matrix2):
     """mul"""
     if len(matrix1[0]) == len(matrix2):
         l_row = []
-        for i in range(len(matrix1)):
+        l_1 = len(matrix1)
+        l_2 = len(matrix2)
+        for i in range(l_1):
             l_col = []
             for j in range(len(matrix2[0])):
                 s_1 = 0
-                for k in range(len(matrix2)):
+                for k in range(l_2):
                     s_1 = s_1 + (matrix1[i][k] * matrix2[k][j])
                 l_col.append(s_1)
             l_row.append(l_col)
