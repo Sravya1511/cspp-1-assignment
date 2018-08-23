@@ -46,11 +46,10 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    li = []
     rows = input()
     # cols = input()
-    r = rows.split(',')
-    e = []
+    r_c = rows.split(',')
+    li_1 = []
     # for i in range(int(r[0])):
     #     lj = []
     #     ele = input()
@@ -61,13 +60,14 @@ def read_matrix():
     # for j in range(int(r[1])):
     #     k = li[j].split(',')
 
-    for i in range(int(r[0])):
+    for i in range(int(r_c[0])):
         ele = list(map(int, input().split()))
-        e.append(ele)
-        if len(ele) != int(r[1]):
+        i +=1
+        li_1.append(ele)
+        if len(ele) != int(r_c[1]):
             print("Error: Invalid input for the matrix")
             return None
-    return e
+    return li_1
 
 def main():
     # read matrix 1
