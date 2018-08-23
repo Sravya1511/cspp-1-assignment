@@ -63,7 +63,7 @@ def read_matrix():
 
     for i in range(int(r_c[0])):
         ele = list(map(int, input().split()))
-        i +=1
+        i += 1
         li_1.append(ele)
         if len(ele) != int(r_c[1]):
             print("Error: Invalid input for the matrix")
@@ -71,6 +71,7 @@ def read_matrix():
     return li_1
 
 def main():
+    """main"""
     # read matrix 1
 
     # read matrix 2
