@@ -26,9 +26,11 @@ def add_matrix(matrix1, matrix2):
     '''
     if len(matrix1) == len(matrix2):
         l_row = []
-        for i in range(len(matrix1)):
+        len_1 = len(matrix1)
+        for i in range(len_1):
             l_col = []
-            for j in range(len(matrix1[i])):
+            len_2 = len(matrix1[i])
+            for j in range(len_2):
                 # if len(matrix1[i]) != len(matrix2[i]):
                 #     break
                 # else:
