@@ -109,7 +109,7 @@ class Message(object):
         c_1 = []
         d_1 = []
         l_1 = len(a_1)
-        for i in range(len(l_1)):
+        for i in range(l_1):
             if i < (len(l_1)-shift):
                 c_1.append(a_1[i+shift])
                 d_1.append(b_1[i+shift])
