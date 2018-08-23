@@ -142,7 +142,7 @@ class PlaintextMessage(Message):
             self.encrypting_dict (dictionary, built using shift)
             self.message_text_encrypted (string, created using shift)
 
-        Hint: consider using the parent class constructor so less 
+        Hint: consider using the parent class constructor so less
         code is repeated
         '''
         #delete this line and replace with your code here"""
@@ -150,7 +150,7 @@ class PlaintextMessage(Message):
         self.valid_words = load_words(WORDLIST_FILENAME)
         self.shift = shift
         self.encrypting_dict = self.build_shift_dict(shift)
-        self.message_text_encrypted = Message.apply_shift(self,shift)
+        self.message_text_encrypted = Message.apply_shift(self, shift)
 
     def get_shift(self):
         '''
