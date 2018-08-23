@@ -116,7 +116,7 @@ class Message(object):
             else:
                 for j in range(shift):
                     c_1.append(a_1[j])
-                    d_1.append(b_1[i])
+                    d_1.append(b_1[j])
                 break
         a_1.extend(b_1)
         c_1.extend(d_1)
