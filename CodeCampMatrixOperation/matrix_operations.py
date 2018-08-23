@@ -6,19 +6,19 @@ def mult_matrix(matrix1, matrix2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
+    """mul"""
     if len(matrix1[0]) == len(matrix2):
-        l2 = []
+        l_row = []
         for i in range(len(matrix1)):
-            l1 = []
+            l_col = []
             for j in range(len(matrix2[0])):
-                s = 0
+                s_1 = 0
                 for k in range(len(matrix2)):
-                    s = s + (matrix1[i][k] * matrix2[k][j])
-                l1.append(s)
-            l2.append(l1)
-        return l2
-    else:
-        print("Error: Matrix shapes invalid for mult")
+                    s_1 = s_1 + (matrix1[i][k] * matrix2[k][j])
+                l_col.append(s_1)
+            l_row.append(l_col)
+        return l_row
+    print("Error: Matrix shapes invalid for mult")
 
 
 
@@ -74,16 +74,6 @@ def read_matrix():
             print("Error: Invalid input for the matrix")
             return None
     return e
-    
-
-
-
-
-
-
-
-  
-
 
 def main():
     # read matrix 1
