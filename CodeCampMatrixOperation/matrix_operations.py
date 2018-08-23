@@ -16,8 +16,8 @@ def mult_matrix(matrix1, matrix2):
                     s = s+(matrix1[j][k]*matrix2[j][k])
                 else:
                     s = s+(matrix1[j][k]*matrix2[k][j])
-        l1.append(s)
-    l2.append(l1)
+            l1.append(s)
+        l2.append(l1)
     return l2
 
 
