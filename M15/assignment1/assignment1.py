@@ -252,21 +252,30 @@ class CiphertextMessage(Message):
         message_text = message_text.lower().split(" ")
         # message_text = message_text.split(" ")
         # message_text = list(message_text)
-        # print(message_text)
-        for word in message_text:
-            message_text = list(word)
-            # print(message_text)
-            for i in range(26):
-                dic = self.build_shift_dict(i)
-                m = ""
-                for letter in message_text:
-                    for x in dic:
-                        if letter == dic[x]:
-                            m = m+x
-                print("m",m)
-                if m in self.valid_words:
-                    if len(m) == len(message_text):
-                        return i, m
+        print(message_text)
+        # for word in message_text:
+        message_text = list(message_text[0])
+        print(message_text)
+        for i in range(26):
+            dic = self.build_shift_dict(i)
+            m = ""
+            for letter in message_text:
+                for x in dic:
+                    if letter == dic[x]:
+                        m = m+x
+            if m in self.valid_words:
+                if len(m) == len(message_text):
+                    shift = i
+        s = ""
+        for letter in message_text:
+            s = s+self.apply_shift(shift)
+        return(i, s)
+
+
+
+
+
+
 
 
 
