@@ -9,13 +9,10 @@ def mult_matrix(matrix1, matrix2):
     l2 = []
     for i in range(len(matrix1)):
         l1 = []
-        for j in range(len(matrix1)):
+        for j in range(len(matrix2[0])):
             s = 0
             for k in range(len(matrix2)):
-                if j == k:
-                    s = s+(matrix1[j][k]*matrix2[j][k])
-                else:
-                    s = s+(matrix1[j][k]*matrix2[k][j])
+                s = s + (matrix1[i][k] * matrix2[k][j])
             l1.append(s)
         l2.append(l1)
     return l2
