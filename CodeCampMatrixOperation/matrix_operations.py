@@ -20,7 +20,7 @@ def add_matrix(matrix1, matrix2):
         b = []
         for i in range(len(matrix1)):
             a = []
-            for j in range(len(matrix1[i])): 
+            for j in range(len(matrix1[i])):
                 a.append(matrix1[i][j]+matrix2[i][j])
             b.append(a)
         return b
@@ -50,9 +50,12 @@ def read_matrix():
     # for j in range(int(r[1])):
     #     k = li[j].split(',')
     for i in range(int(r[0])):
-        ele = list(map(int, input().split()))
-        e.append(ele)
-    return e
+        try:
+            ele = list(map(int, input().split()))
+            e.append(ele)
+        return e
+        except: 
+            print("IndexError: list index out of range")
 
 
 
