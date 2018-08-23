@@ -35,10 +35,10 @@ def add_matrix(matrix1, matrix2):
         for i in range(len(matrix1)):
             a = []
             for j in range(len(matrix1[i])):
-                if len(matrix1[i]) != len(matrix2[i]):
-                    return 
-                else:
-                    a.append(matrix1[i][j]+matrix2[i][j])
+                # if len(matrix1[i]) != len(matrix2[i]):
+                #     break
+                # else:
+                a.append(matrix1[i][j]+matrix2[i][j])
             b.append(a)
         return b
     else:
@@ -72,7 +72,7 @@ def read_matrix():
             e.append(ele)
         return e
     except: 
-        print("Error: Invalid input for the matrix")
+        print("IndexError: list index out of range")
 
 
 
@@ -92,6 +92,9 @@ def main():
     # multiply matrix 1 and matrix 2
     matrix1 = read_matrix()
     matrix2 = read_matrix()
+    for i in range(len(matrix1)):
+        if len(matrix1[i]) != len(matrix2[i]):
+            return "Error: Invalid input for the matrix"
     add = add_matrix(matrix1, matrix2)
     print(add)
     mul = mult_matrix(matrix1, matrix2)
