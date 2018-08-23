@@ -22,8 +22,8 @@ def add_matrix(matrix1, matrix2):
             a = []
             for j in range(len(matrix1[i])): 
                 a.append(matrix1[i][j]+matrix2[i][j])
-        b.append(a)
-    return b
+            b.append(a)
+        return b
 
 def read_matrix():
     '''
