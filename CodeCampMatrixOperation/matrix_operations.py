@@ -35,8 +35,11 @@ def add_matrix(matrix1, matrix2):
         for i in range(len(matrix1)):
             a = []
             for j in range(len(matrix1[i])):
-                a.append(matrix1[i][j]+matrix2[i][j])
-            b.append(a)
+                if len(matrix1[i]) != len(matrix2[i]):
+                    break
+                else:
+                    a.append(matrix1[i][j]+matrix2[i][j])
+                b.append(a)
         return b
     else:
         print("Error: Matrix shapes invalid for addition")
