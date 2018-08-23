@@ -73,7 +73,7 @@ def read_matrix():
         return e
     except: 
         print("Error: Invalid input for the matrix")
-        break
+    
 
 
 
