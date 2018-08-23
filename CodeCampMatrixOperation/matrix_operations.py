@@ -17,6 +17,7 @@ def add_matrix(matrix1, matrix2):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     if len(matrix1) == len(matrix2):
+        b = []
         for i in range(len(matrix1)):
             a = []
             for j in range(len(matrix1[i])):
