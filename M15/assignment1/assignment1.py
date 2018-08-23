@@ -280,17 +280,6 @@ class CiphertextMessage(Message):
         return self.decrypted_message
 
 
-
-
-
-
-
-
-
-
-
-
-
 ### DO NOT MODIFY THIS METHOD ###
 def main():
     ''' This method is provided to handle testcases'''
