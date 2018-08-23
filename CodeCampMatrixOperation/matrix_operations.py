@@ -30,15 +30,22 @@ def read_matrix():
     rows = input()
     # cols = input()
     r = rows.split(',')
+    # for i in range(int(r[0])):
+    #     lj = []
+    #     ele = input()
+    #     e = ele.split(',')
+    #     print(e)
+    #     li.append(e)
+    # print(li)
+    # for j in range(int(r[1])):
+    #     k = li[j].split(',')
     for i in range(int(r[0])):
-        lj = []
-        # for j in range(int(r[1])):
-        ele = input()
-        e = ele.split(',')
-        lj.append(e)
-    print(lj)
+        ele = list(map(int, input.split()))
+        e.append(ele)
+    print(e)
 
-    
+
+
 
 
 
