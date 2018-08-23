@@ -31,16 +31,16 @@ def add_matrix(matrix1, matrix2):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     if len(matrix1) == len(matrix2):
-        b = []
+        l_row = []
         for i in range(len(matrix1)):
-            a = []
+            l_col = []
             for j in range(len(matrix1[i])):
                 # if len(matrix1[i]) != len(matrix2[i]):
                 #     break
                 # else:
-                a.append(matrix1[i][j]+matrix2[i][j])
-            b.append(a)
-        return b
+                l_col.append(matrix1[i][j]+matrix2[i][j])
+            l_row.append(l_col)
+        return l_row
     else:
         print("Error: Matrix shapes invalid for addition")
 
