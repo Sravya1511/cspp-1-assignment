@@ -132,6 +132,7 @@ class Message(object):
 
 ### Paste your implementation of the `PlaintextMessage` class here
 class PlaintextMessage(Message):
+    """m"""
     def __init__(self, text, shift):
         """
         A PlaintextMessage object inherits from Message and has five attributes:
@@ -154,7 +155,7 @@ class PlaintextMessage(Message):
     def get_shift(self):
         '''
         Used to safely access self.shift outside of the class
-        
+
         Returns: self.shift
         '''
         #delete this line and replace with your code here
@@ -163,7 +164,7 @@ class PlaintextMessage(Message):
     def get_encrypting_dict(self):
         '''
         Used to safely access a copy self.encrypting_dict outside of the class
-        
+
         Returns: a COPY of self.encrypting_dict
         '''
         #delete this line and replace with your code here
@@ -172,19 +173,19 @@ class PlaintextMessage(Message):
     def get_message_text_encrypted(self):
         '''
         Used to safely access self.message_text_encrypted outside of the class
-        
+
         Returns: self.message_text_encrypted
         '''
         #delete this line and replace with your code here
-       
+
         return self.message_text_encrypted
 
     def change_shift(self, shift):
         '''
-        Changes self.shift of the PlaintextMessage and updates other 
-        attributes determined by shift (ie. self.encrypting_dict and 
+        Changes self.shift of the PlaintextMessage and updates other
+        attributes determined by shift (ie. self.encrypting_dict and
         message_text_encrypted).
-        
+
         shift (integer): the new shift that should be associated with this message.
         0 <= shift < 26
 
