@@ -49,13 +49,13 @@ def read_matrix():
     # print(li)
     # for j in range(int(r[1])):
     #     k = li[j].split(',')
-        try:
-            for i in range(int(r[0])):
-            ele = list(map(int, input().split()))
-            e.append(ele)
-            return e
-        except: 
-            print("IndexError: list index out of range")
+    try:
+        for i in range(int(r[0])):
+        ele = list(map(int, input().split()))
+        e.append(ele)
+        return e
+    except: 
+        print("IndexError: list index out of range")
 
 
 
