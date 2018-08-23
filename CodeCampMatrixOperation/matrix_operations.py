@@ -27,7 +27,8 @@ def read_matrix():
         error message should be "Error: Invalid input for the matrix"
     '''
     li = []
-    rows, cols = int(input())
+    rows = input()
+    cols = input()
     for i in range(rows):
         lj = []
         for j in range(cols):
