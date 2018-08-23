@@ -95,7 +95,7 @@ class Message(object):
         should have 52 keys of all the uppercase letters and all the lowercase
         letters only.
 
-        shift (integer): the amount by which to shift every letter of the 
+        shift (integer): the amount by which to shift every letter of the
         alphabet. 0 <= shift < 26
 
         Returns: a dictionary mapping a letter (string) to
@@ -108,8 +108,9 @@ class Message(object):
         b_1 = list(string.ascii_uppercase)
         c_1 = []
         d_1 = []
-        for i in range(len(a_1)):
-            if i < (len(a_1)-shift):
+        l_1 = len(a_1)
+        for i in range(len(l_1)):
+            if i < (len(l_1)-shift):
                 c_1.append(a_1[i+shift])
                 d_1.append(b_1[i+shift])
             else:
