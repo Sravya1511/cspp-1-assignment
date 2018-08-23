@@ -27,11 +27,11 @@ def read_matrix():
         error message should be "Error: Invalid input for the matrix"
     '''
     li = []
-    rows = float(input())
-    cols = float(input())
-    for i in range(rows):
+    rows = input()
+    cols = input()
+    for i in range(int(rows)):
         lj = []
-        for j in range(cols):
+        for j in range(int(cols):
             ele = int(input())
             lj.append(ele)
         li.append(lj)
