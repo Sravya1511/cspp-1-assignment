@@ -72,7 +72,8 @@ def read_matrix():
             e.append(ele)
         return e
     except: 
-        print("IndexError: list index out of range")
+        print("Error: Invalid input for the matrix")
+        break
 
 
 
@@ -92,6 +93,8 @@ def main():
     # multiply matrix 1 and matrix 2
     matrix1 = read_matrix()
     matrix2 = read_matrix()
+    # for i in range(len(matrix1)):
+    #     if len(matrix[i]) != 
     add = add_matrix(matrix1, matrix2)
     print(add)
     mul = mult_matrix(matrix1, matrix2)
