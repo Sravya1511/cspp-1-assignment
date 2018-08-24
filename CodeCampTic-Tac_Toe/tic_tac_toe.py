@@ -22,14 +22,14 @@
 #     for i in range(0, len(l_1), 3):
 #         if l_1[i] == l_1[i+1] == l_1[i+2]:
 #             return True
-            
+
 #     for i in range(3):
 #         if l_1[i] == l_1[i+3] == l_1[i+3]:
 #             return True
-        
+
 #     if l_1[0] == l_1[4] == l_1[8]:
 #         return True
-    
+
 #     if l_1[2] == l_1[4] == l_1[6]:
 #         return True
 
@@ -109,13 +109,13 @@ def winner(game_list):
 
 
 
-game_list = read_list()
-if invalid_input(game_list) == True:
+game_lis_1t = read_list()
+if invalid_input(game_list_1) == True:
     print("invalid input")
-elif invalid_game(game_list) == True:
+elif invalid_game(game_list_1) == True:
     print("invalid game")
 else:
-    winner = winner(game_list)
+    winner = winner(game_list_1)
     print(winner)
 
 
