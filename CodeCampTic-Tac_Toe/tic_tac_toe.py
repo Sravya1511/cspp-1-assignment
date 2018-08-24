@@ -62,8 +62,9 @@ def read_list():
 def invalid_input(game_list):
     for i in range(3):
         for j in range(3):
-            if game_list[i][j] != 'o' or game_list[i][j]!= 'x' or game_list[i][j]!= '.':
+            if game_list[i][j] != 'o' or game_list[i][j] != 'x' or game_list[i][j] != '.':
                 return True
+    return False
 
 def invalid_game(game_list):
     for i in range(3):
@@ -74,6 +75,7 @@ def invalid_game(game_list):
                 count_x += 1
     if abs(count_x - count_o) > 1:
         return True
+    retrun False
 
 
 
