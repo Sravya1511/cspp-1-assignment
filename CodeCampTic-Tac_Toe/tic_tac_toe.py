@@ -56,8 +56,28 @@ def read_list():
         # for j in range(3):
         li = list((map(str, input().split())))
         game_list.append(li)
-    print(game_list)
+    # print(game_list)
     return game_list
+
+def invalid_input(game_list):
+    for i in range(3):
+        for j in range(3):
+            if game_list[i][j] != 'o' or game_list[i][j]!= 'x':
+                return True
+
+def invalid_game(game_list):
+    for i in range(3):
+        for j in range(3):
+            if game_list[i][j] == 'o':
+                count_o += 1
+            if game_list[i][j] == 'x':
+                count_x += 1
+    if abs(count_x - count_o) > 1:
+        return True
+
+
+
+
 
 def winner(game_list):
     for i in range(3):
@@ -79,8 +99,13 @@ def winner(game_list):
 
 
 game_list = read_list()
-winner = winner(game_list)
-print(winner)
+if invalid_input(game_list) == True:
+    print("invalid input")
+elif invalid_game(game_list) == True:
+    print("invalid game")
+elif:
+    winner = winner(game_list)
+    print(winner)
 
 
 
