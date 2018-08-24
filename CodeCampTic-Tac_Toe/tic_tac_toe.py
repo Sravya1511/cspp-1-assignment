@@ -51,10 +51,10 @@
 #         print("player 2 won")
 #         break
 game_list = []
-l = input()
+# l = input()
 for i in range(3):
     # for j in range(3):
-    li = list((map(str, l.split())))
+    li = list((map(str, input().split())))
     game_list.append(li)
 print(game_list)
 
