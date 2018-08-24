@@ -114,9 +114,9 @@ def winner(game_list):
 
 
 game_list_1 = read_list()
-if invalid_input(game_list_1) == True:
+if invalid_input(game_list_1) is True:
     print("invalid input")
-elif invalid_game(game_list_1) == True:
+elif invalid_game(game_list_1) is True:
     print("invalid game")
 else:
     winner = winner(game_list_1)
