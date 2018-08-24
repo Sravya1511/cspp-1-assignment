@@ -50,13 +50,34 @@
 #     if winner(l_1) == True:
 #         print("player 2 won")
 #         break
+def read_list():
 game_list = []
-# l = input()
+
 for i in range(3):
     # for j in range(3):
     li = list((map(str, input().split())))
     game_list.append(li)
-print(game_list)
+return game_list
+
+def winner(game_list):
+    for i in range(3):
+        if game_list[i][0] == game_list[i][1] == game_list[i][2] == 'o':
+            return 'o'
+        if game_list[i][0] == game_list[i][1] == game_list[i][2] == 'x':
+            return 'x'
+    for j in range(3):
+        if game_list[0][j] == game_list[1][j] == game_list[2][j] == 'o':
+            return 'o'
+        if game_list[0][j] == game_list[1][j] == game_list[2][j] == 'x':
+            return 'x'
+
+
+game_list = read_list()
+winner = winner(game_list)
+print(winner)
+
+
+
 
 
 
