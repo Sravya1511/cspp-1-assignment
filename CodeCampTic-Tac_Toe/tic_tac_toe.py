@@ -52,8 +52,9 @@
 #         break
 
 l = input()
-game_list = list((map(list, l.split('\n'))))
-print(game_list)
+for i in range(0, 3):
+    li = list((map(list, l.split('\n'))))
+print(li)
 
 
 
