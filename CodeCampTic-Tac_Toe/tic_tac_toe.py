@@ -98,6 +98,7 @@ def winner(game_list):
         return 'o'
     if (game_list[0][0] == game_list[1][1] == game_list[2][2] == 'x') or (game_list[0][2] == game_list[1][1] == game_list[2][0] == 'x'):
         return 'x'
+    return 'draw'
 
 
 
