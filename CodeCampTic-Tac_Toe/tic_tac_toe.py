@@ -67,6 +67,8 @@ def invalid_input(game_list):
     return False
 
 def invalid_game(game_list):
+    count_o = 0
+    count_x = 0
     for i in range(3):
         for j in range(3):
             if game_list[i][j] == 'o':
