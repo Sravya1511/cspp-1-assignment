@@ -66,6 +66,7 @@ def invalid_input(game_list):
                 return True
     return False
 
+
 def invalid_game(game_list):
     count_o = 0
     count_x = 0
@@ -75,6 +76,10 @@ def invalid_game(game_list):
                 count_o += 1
             if game_list[i][j] == 'x':
                 count_x += 1
+            if game_list[i][j] == '.':
+                count = count+1
+    if count_x == count_o == count == 3:
+        return True
     if abs(count_x - count_o) > 1:
         return True
     return False
