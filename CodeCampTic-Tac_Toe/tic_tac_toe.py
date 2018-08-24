@@ -103,7 +103,7 @@ if invalid_input(game_list) == True:
     print("invalid input")
 elif invalid_game(game_list) == True:
     print("invalid game")
-elif:
+else:
     winner = winner(game_list)
     print(winner)
 
