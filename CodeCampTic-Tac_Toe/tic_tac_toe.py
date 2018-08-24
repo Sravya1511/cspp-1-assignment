@@ -52,7 +52,7 @@
 #         break
 
 l = input()
-game_list = list((map(list, l.split())))
+game_list = list((map(list, l.split('\n'))))
 print(game_list)
 
 
