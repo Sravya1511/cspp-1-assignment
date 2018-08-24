@@ -51,13 +51,12 @@
 #         print("player 2 won")
 #         break
 def read_list():
-game_list = []
-
-for i in range(3):
-    # for j in range(3):
-    li = list((map(str, input().split())))
-    game_list.append(li)
-return game_list
+    game_list = []
+    for i in range(3):
+        # for j in range(3):
+        li = list((map(str, input().split())))
+        game_list.append(li)
+    return game_list
 
 def winner(game_list):
     for i in range(3):
