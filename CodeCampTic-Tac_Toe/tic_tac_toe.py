@@ -53,6 +53,7 @@
 
 l = input()
 game_list = list((map(list, l.split())))
+print(game_list)
 
 
 
