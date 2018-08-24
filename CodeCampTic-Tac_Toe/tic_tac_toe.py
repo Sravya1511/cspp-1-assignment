@@ -109,7 +109,7 @@ def winner(game_list):
 
 
 
-game_lis_1t = read_list()
+game_list_1 = read_list()
 if invalid_input(game_list_1) == True:
     print("invalid input")
 elif invalid_game(game_list_1) == True:
