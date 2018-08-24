@@ -7,6 +7,7 @@ def mult_matrix(matrix1, matrix2):
         l_2 = len(matrix2)
         for i in range(l_1):
             l_col = []
+            
             for j in range(len(matrix2[0])):
                 s_1 = 0
                 for k in range(l_2):
