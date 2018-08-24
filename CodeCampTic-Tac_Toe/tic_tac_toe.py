@@ -54,7 +54,7 @@ game_list = []
 l = input()
 for i in range(3):
     # for j in range(3):
-    li = list((map(int, l.split())))
+    li = list((map(str, l.split())))
     game_list.append(li)
 print(game_list)
 
