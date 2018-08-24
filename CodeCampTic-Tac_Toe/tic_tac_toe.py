@@ -75,7 +75,7 @@ def invalid_game(game_list):
                 count_x += 1
     if abs(count_x - count_o) > 1:
         return True
-    retrun False
+    return False
 
 
 
