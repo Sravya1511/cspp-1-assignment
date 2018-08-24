@@ -51,6 +51,7 @@
 #         print("player 2 won")
 #         break
 def read_list():
+    """read"""
     game_list = []
     for i in range(3):
         # for j in range(3):
@@ -60,6 +61,7 @@ def read_list():
     return game_list
 
 def invalid_input(game_list):
+    """invalid"""
     for i in range(3):
         for j in range(3):
             if game_list[i][j] != 'o' and game_list[i][j] != 'x' and game_list[i][j] != '.':
@@ -68,6 +70,7 @@ def invalid_input(game_list):
 
 
 def invalid_game(game_list):
+    """invalid"""
     count_o = 0
     count_x = 0
     count = 0
@@ -90,6 +93,7 @@ def invalid_game(game_list):
 
 
 def winner(game_list):
+    """winner"""
     for i in range(3):
         if game_list[i][0] == game_list[i][1] == game_list[i][2] == 'o':
             return 'o'
