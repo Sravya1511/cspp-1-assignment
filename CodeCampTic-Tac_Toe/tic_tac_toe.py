@@ -50,11 +50,12 @@
 #     if winner(l_1) == True:
 #         print("player 2 won")
 #         break
-
+game_list = []
 l = input()
 for i in range(0, 3):
-    li = list((map(list, l.split('\n'))))
-print(li)
+    li = list((map(list, l.split())))
+    game_list.append(li)
+print(game_list)
 
 
 
