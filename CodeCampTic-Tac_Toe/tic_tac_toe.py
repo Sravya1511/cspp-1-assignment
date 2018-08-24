@@ -62,7 +62,7 @@ def read_list():
 def invalid_input(game_list):
     for i in range(3):
         for j in range(3):
-            if game_list[i][j] != 'o' or game_list[i][j] != 'x' or game_list[i][j] != '.':
+            if game_list[i][j] != 'o' and game_list[i][j] != 'x' and game_list[i][j] != '.':
                 return True
     return False
 
