@@ -56,6 +56,7 @@ def read_list():
         # for j in range(3):
         li = list((map(str, input().split())))
         game_list.append(li)
+    print(game_list)
     return game_list
 
 def winner(game_list):
