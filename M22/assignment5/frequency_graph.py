@@ -9,15 +9,17 @@ def frequency_graph(dictionary):
         print(i, "-", graph(i, dictionary))
 
 def graph(i, dictionary):
-    s = ''
+    """sorted"""
+    s_1 = ''
     count = 0
     while count < dictionary[i]:
-        s = s+"#"
+        s_1 = s_1+"#"
         count += 1
     return s
-            
+
 
 def main():
+    """main"""
     dictionary = eval(input())
     frequency_graph(dictionary)
 
