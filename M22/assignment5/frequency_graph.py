@@ -15,7 +15,7 @@ def graph(i, dictionary):
         while count < dictionary[i]:
             s = s+"#"
             count += 1
-    return s
+        return s
             
 
 def main():
