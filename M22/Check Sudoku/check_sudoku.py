@@ -13,7 +13,24 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    print(sudoku)
+    n = 9
+    # if n < 1:
+    #     return False
+    for i in range(n):
+        list_hori = []
+        for k in range(n):
+            if sudoku[i][k] in list_hori:
+                return False
+            list_hori.append(sudoku[i][k])
+    for i in range(n):
+        list_veri = []
+        for j in range(n):
+            if sudoku[j][i] in list_veri:
+                return False
+            list_veri.append(sudoku[j][i])
+    return True
+
+         
 
 def main():
     '''
