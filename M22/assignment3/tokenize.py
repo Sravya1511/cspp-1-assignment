@@ -5,18 +5,22 @@ each word
 
 def tokenize(string):
     s = string.split('\n')
-    print(s)
+    dic = {}
+    for i in s:
+        for j in i:
+            dic[i] = i.count(j)
+    return dic
+
 
     
             
 def main():
+    string = ''
     lines = int(input())
-    string = ""
     for i in range(lines):
-        string = string + input()
-        i = i+1
-        string = string + '\n'
-    print(tokenize(string))
+        i += 1
+        string += input()
+        string += '\n'
 
 if __name__ == '__main__':
     main()
