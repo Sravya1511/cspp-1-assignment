@@ -265,10 +265,8 @@ def decrypt_story():
         shift value and decrypted string in a tuple.
     '''
     #delete this line when you write your code.
-    def __init__(self, text):
-        self.story = load_words("story.txt")
-    CiphertextMessage(self.story)
-
+    decrypt = CiphertextMessage(get_story_string())
+    return decrypt.decrypted_message()
 
 ### DO NOT MODIFY THIS METHOD ###
 
