@@ -20,7 +20,7 @@ def tokenize(string):
                 word = word.replace(i, "")
         l_new.append(word)
         print(l_new)
-    for word in l_new
+    for word in l_new:
         dic[word] = li_1.count(word)
     return dic
 
