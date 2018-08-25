@@ -8,7 +8,8 @@ def tokenize(string):
     dic = {}
     for i in s:
         for j in i:
-            dic[i] = i.count(j)
+            if j in dic.keys():
+                dic[j] = i.count(j)
     return dic
 
 
