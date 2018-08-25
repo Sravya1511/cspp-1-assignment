@@ -9,7 +9,7 @@ def print_dictionary(dictionary):
     # print(sortedkeys)
     for i in sortedkeys:
     	print(i, "-", dictionary[i])
-    	print('\n')
+    	# print('\n')
     	
 
 def main():
