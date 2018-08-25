@@ -266,7 +266,7 @@ def decrypt_story():
     '''
     #delete this line when you write your code.
     decrypt = CiphertextMessage(get_story_string())
-    return decrypt.decrypted_message()
+    return decrypt.decrypt_message()
 
 ### DO NOT MODIFY THIS METHOD ###
 
