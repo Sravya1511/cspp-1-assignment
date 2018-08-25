@@ -7,8 +7,10 @@ def tokenize(string):
     s = string.split('\n')
     dic = {}
     for i in s:
-       dic[i] = s.count(i)
-    return dic
+        print(i)
+        for j in i:
+            print(j)
+       
 
 
     
