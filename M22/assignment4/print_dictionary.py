@@ -10,8 +10,8 @@ def print_dictionary(dictionary):
     li.sort()
     print(li)
     # print(sortedkeys)
-    for i in li:
-        print(i, "-", dictionary[i])
+    # for i in li:
+    #     print(i, "-", dictionary[i])
    
 
 def main():
