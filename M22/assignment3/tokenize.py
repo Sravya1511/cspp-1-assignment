@@ -13,10 +13,10 @@ def tokenize(string):
         data = s_t[i].split(" ")
         # print(data)
         li_1.extend(data)
-        
-    for i in word:
-        if i in '"' ',' ';':
-            word = word.replace(i, "")
+    for word in li_1:
+        for i in word:
+            if i in '"' ',' ';':
+                word = word.replace(i, "")
         dic[word] = li_1.count(word)
     return dic
 
