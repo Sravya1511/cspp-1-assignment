@@ -19,6 +19,7 @@ def check_sudoku(sudoku):
     for i in range(n):
         list_hori = []
         for k in range(n):
+            list_hori.append(sudoku[i][j])
             if sudoku[i][k] in list_hori:
                 return False
             list_hori.append(sudoku[i][k])
@@ -28,7 +29,15 @@ def check_sudoku(sudoku):
             if sudoku[j][i] in list_veri:
                 return False
             list_veri.append(sudoku[j][i])
-    return True
+    for i in range(0, 3, len(sudoku)):
+        list_grid = []
+        k = 0
+        for j in range(0, 3, len(sudoku)):
+            if sudoku[]
+
+
+
+
 
          
 
