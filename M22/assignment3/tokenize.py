@@ -4,10 +4,19 @@ each word
 '''
 
 def tokenize(string):
-    pass
+	s = string.split('\n')
+	print(s)
+
+    
             
 def main():
-    pass
+	lines = int(input())
+    string = ""
+    for i in range(lines):
+        string = string + input()
+        i = i+1
+        string = string + '\n'
+    print(tokenize(string))
 
 if __name__ == '__main__':
     main()
