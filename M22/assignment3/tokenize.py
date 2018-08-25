@@ -6,9 +6,10 @@ each word
 def tokenize(string):
     s = string.split('\n')
     dic = {}
-    for i in s:
-        word = i.split(" ")
+    for i in range(len(s) -1):
+        word = s[i].split(" ")
         print(word)
+
         
        
 
