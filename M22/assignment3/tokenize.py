@@ -8,24 +8,16 @@ def tokenize(string):
     s_t = string.split('\n')
     dic = {}
     li_1 = []
-    li_new = []
 
     for i in range(len(s_t) -1):
         data = s_t[i].split(" ")
-        for i in data:
-            if i in '"' ',' ';':
-                word = word.replace(i, "")
         # print(data)
         li_1.extend(data)
-        for i in li_1:
-            if i in '"' ',' ';':
-                word = word.replace(i, "")
-            li_new.extend(word)
-    for word in li_new:
-        # for i in word:
-        #     if i in '"' ',' ';':
-        #         word = word.replace(i, "")
-        dic[word] = li_new.count(word)
+        
+    for i in word:
+        if i in '"' ',' ';':
+            word = word.replace(i, "")
+        dic[word] = li_1.count(word)
     return dic
 
 def main():
