@@ -12,11 +12,10 @@ def graph(i, dictionary):
     for i in dictionary:
         s = ''
         count = 0
-        for j in dictionary[i]:
-            while count < j:
-                s = s+"#"
-                count += 1
-        return s
+        while count < dictionary[i]:
+            s = s+"#"
+            count += 1
+    return s
             
 
 def main():
