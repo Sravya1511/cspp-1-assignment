@@ -10,10 +10,14 @@ def frequency_graph(dictionary):
 
 def graph(i, dictionary):
 	for i in dictionary:
-		if dictionary[i] == 2:
-			return '##'
-		return "#"
-
+        s = ''
+        count = 0
+	    for j in dictionary[i]:
+	    	while count < j:
+	    		s = s+"#"
+	    		count += 1
+	    return s
+			
 
 def main():
     dictionary = eval(input())
