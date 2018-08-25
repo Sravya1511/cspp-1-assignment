@@ -9,13 +9,12 @@ def frequency_graph(dictionary):
         print(i, "-", graph(i, dictionary))
 
 def graph(i, dictionary):
-    for i in dictionary:
-        s = ''
-        count = 0
-        while count < dictionary[i]:
-            s = s+"#"
-            count += 1
-        return s
+    s = ''
+    count = 0
+    while count < dictionary[i]:
+        s = s+"#"
+        count += 1
+    return s
             
 
 def main():
