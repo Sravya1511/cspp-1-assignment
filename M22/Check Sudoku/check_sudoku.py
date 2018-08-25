@@ -16,23 +16,17 @@ def check_sudoku(sudoku):
     n = 9
     for i in range(n):
         list_hori = []
-        count = 0
         for k in range(n):
-            list_hori.append(sudoku[i][k])
             if sudoku[i][k] in list_hori:
-                count = count+1
-                if count == 2:
-                    return False
+                retrun False
+            list_hori.append(sudoku[i][k])
 
     for i in range(n):
         list_veri = []
-        count = 0
         for j in range(n):
-            list_hori.append(sudoku[j][i])
             if sudoku[j][i] in list_veri:
-                count = count+1
-                if count == 2:
-                    return False
+                return False
+            list_hori.append(sudoku[j][i])
 
     # for i in range(0, 3, len(sudoku)):
     #     list_grid = []
