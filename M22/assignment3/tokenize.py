@@ -4,23 +4,24 @@ each word
 '''
 
 def tokenize(string):
-    s = string.split('\n')
+    """string"""
+    s_t = string.split('\n')
     dic = {}
-    li = []
+    li_1 = []
 
-    for i in range(len(s) -1):
-        data = s[i].split(" ")
+    for i in range(len(s_t) -1):
+        data = s_t[i].split(" ")
         # print(data)
-        li.extend(data)
-    for word in li:
+        li_1.extend(data)
+    for word in li_1:
         for i in word:
             if i in '"' ',' ';':
                 word = word.replace(i, "")
-        dic[word] = li.count(word)
+        dic[word] = li_1.count(word)
     return dic
-    
-            
+
 def main():
+    """main"""
     string = ''
     lines = int(input())
     for i in range(lines):
