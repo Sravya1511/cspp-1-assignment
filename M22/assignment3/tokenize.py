@@ -7,9 +7,9 @@ def tokenize(string):
     s = string.split('\n')
     dic = {}
     for i in s:
-        print(i)
-        for j in i:
-            print(j)
+        word = i.split(" ")
+        print(word)
+        
        
 
 
