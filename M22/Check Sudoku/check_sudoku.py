@@ -21,7 +21,7 @@ def check_sudoku(sudoku):
             list_hori.append(sudoku[i][k])
             if sudoku[i][k] in list_hori:
                 count = count+1
-                if count == 1:
+                if count == 2:
                     return False
 
     for i in range(n):
@@ -31,7 +31,7 @@ def check_sudoku(sudoku):
             list_hori.append(sudoku[j][i])
             if sudoku[j][i] in list_hori:
                 count = count+1
-                if count == 1:
+                if count == 2:
                     return False
 
     # for i in range(0, 3, len(sudoku)):
