@@ -14,7 +14,7 @@ def tokenize(string):
         li.extend(data)
     for word in li:
         for i in word:
-            if i in '"':
+            if i in '"' ',' ';':
                 word = word.replace(i, "")
         dic[word] = li.count(word)
     return dic
