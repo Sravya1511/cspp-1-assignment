@@ -9,7 +9,7 @@ def clean_string(string):
     	if i in '!' '@' '#' '$' '%' '^' '&' '*' ' ' '.':
     		string = string.replace(i, "")
     if len(string) == 0:
-    	return ""
+    	return " "
     return string
 
 def main():
