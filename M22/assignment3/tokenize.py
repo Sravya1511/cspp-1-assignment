@@ -10,9 +10,11 @@ def tokenize(string):
 
     for i in range(len(s) -1):
         data = s[i].split(" ")
-        print(data)
+        # print(data)
         li.extend(data)
-    print(li)
+    for word in li:
+        dic[word] = li.count(word)
+    return dic
 
 
 
