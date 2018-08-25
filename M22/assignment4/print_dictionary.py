@@ -5,14 +5,15 @@ the key and frequency with a SPACE - SPACE.
 '''
 
 def print_dictionary(dictionary):
+    """sorted"""
     sortedkeys = sorted(dictionary, key=str)
     # print(sortedkeys)
     for i in sortedkeys:
-    	print(i, "-", dictionary[i])
-    
+        print(i, "-", dictionary[i])
 
 
 def main():
+    """main"""
     dictionary = eval(input())
     print_dictionary(dictionary)
 
