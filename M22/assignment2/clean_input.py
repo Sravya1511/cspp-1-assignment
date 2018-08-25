@@ -7,7 +7,7 @@ def clean_string(string):
     for i in string:
     	if i in '!' '@' '#' '$' '%' '^' '&' '*' ' ':
     		string = string.replace(i, "")
-    print(string)
+    return string
 
 def main():
     string = input()
