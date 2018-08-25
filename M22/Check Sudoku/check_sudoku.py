@@ -34,15 +34,15 @@ def check_sudoku(sudoku):
                 if count == 1:
                     return False
 
-    for i in range(0, 3, len(sudoku)):
-        list_grid = []
-        for j in range(0, 3, len(sudoku)):
-            for k in range(3):
-                list_grid.append(sudoku[j][k])
-                if sudoku[j][k] in list_grid:
-                    count = count+1
-        if count == 1:
-            return False
+    # for i in range(0, 3, len(sudoku)):
+    #     list_grid = []
+    #     for j in range(0, 3, len(sudoku)):
+    #         for k in range(3):
+    #             list_grid.append(sudoku[j][k])
+    #             if sudoku[j][k] in list_grid:
+    #                 count = count+1
+    #     if count == 1:
+    #         return False
     return True
 
 
