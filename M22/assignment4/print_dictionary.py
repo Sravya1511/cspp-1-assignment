@@ -8,6 +8,7 @@ def print_dictionary(dictionary):
     li = []
     li.append(dictionary.keys())
     li.sort()
+    print(li)
     # print(sortedkeys)
     for i in li:
         print(i, "-", dictionary[i])
