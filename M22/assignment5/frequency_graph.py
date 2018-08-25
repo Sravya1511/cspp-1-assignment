@@ -9,15 +9,15 @@ def frequency_graph(dictionary):
         print(i, "-", graph(i, dictionary))
 
 def graph(i, dictionary):
-	for i in dictionary:
+    for i in dictionary:
         s = ''
         count = 0
-	    for j in dictionary[i]:
-	    	while count < j:
-	    		s = s+"#"
-	    		count += 1
-	    return s
-			
+        for j in dictionary[i]:
+            while count < j:
+                s = s+"#"
+                count += 1
+        return s
+            
 
 def main():
     dictionary = eval(input())
