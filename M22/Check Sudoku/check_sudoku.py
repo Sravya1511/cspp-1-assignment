@@ -14,33 +14,31 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     n = 9
+    # if n < 1:
+    #     return False
     for i in range(n):
         list_hori = []
+        list_veri = []
+        list_grid = []
         for k in range(n):
             if sudoku[i][k] in list_hori:
                 return False
             list_hori.append(sudoku[i][k])
-
-    # for i in range(n):
-        list_veri = []
         for j in range(n):
             if sudoku[j][i] in list_veri:
                 return False
-            list_hori.append(sudoku[j][i])
+            list_veri.append(sudoku[j][i])
 
     # for i in range(0, 3, len(sudoku)):
-    #     list_grid = []
-    #     for j in range(0, 3, len(sudoku)):
-    #         for k in range(3):
-    #             list_grid.append(sudoku[j][k])
-    #             if sudoku[j][k] in list_grid:
-    #                 count = count+1
-    #     if count == 1:
-    #         return False
+    # #     list_grid = []
+    # #     for j in range(0, 3, len(sudoku)):
+    # #         for k in range(3):
+    # #             list_grid.append(sudoku[j][k])
+    # #             if sudoku[j][k] in list_grid:
+    # #                 count = count+1
+    # #     if count == 1:
+    # #         return False
     return True
-
-
-
 
 
 
